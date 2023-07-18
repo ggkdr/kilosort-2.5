@@ -24,7 +24,7 @@ rez.wPCA  = gather(wPCA);
 
 % Get nearest channels for every template center. 
 % Template products will only be computed on these channels. 
-NchanNear = 10;
+NchanNear = 1;
 [iC, dist] = getClosestChannels2(ycup, xcup, rez.yc, rez.xc, NchanNear);
 
 % Templates with centers that are far from an active site are discarded
@@ -70,6 +70,8 @@ for k = 1:ops.Nbatch
     cF0 = max(0, cF);
     cF0 = cF0 ./ sum(cF0, 1);
     iChan = st(2, :) + 1;
+    disp(st);
+    disp(iChan);
     yct = sum(cF0 .* ys(:, iChan), 1);
     
     % build st for the current batch

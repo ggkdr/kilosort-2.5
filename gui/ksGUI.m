@@ -420,7 +420,7 @@ classdef ksGUI < handle
             obj.P.currX = 0;
             obj.P.nChanToPlot = 16;
             obj.P.nChanToPlotCM = 16;
-            obj.P.selChans = 1:16;            
+            obj.P.selChans = 1:16;%TODO: debug this--why is it 16, does it get set elsewhere?       
             obj.P.vScale = 0.005;
             obj.P.dataGood = false;
             obj.P.probeGood = false;            
@@ -880,7 +880,7 @@ classdef ksGUI < handle
                     else
                         pd = zeros(size(datAllF));
                     end
-                    
+
                     dat = datAll(obj.P.chanMap.chanMap(chList),:);
                     
                     connInChList = obj.P.chanMap.connected(chList);
@@ -1265,7 +1265,7 @@ classdef ksGUI < handle
 
                     % order by y-coord
                     yc = obj.P.chanMap.ycoords;
-                    theseYC = yc(obj.P.selChans);
+                    theseYC = yc();
                     [~,ii] = sort(theseYC);
                     obj.P.selChans = obj.P.selChans(ii);
                     

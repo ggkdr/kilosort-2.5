@@ -1,35 +1,35 @@
 %  create a channel map file
-
-Nchannels = 32;
+% 
+Nchannels = 256;
 connected = true(Nchannels, 1);
 chanMap   = 1:Nchannels;
 chanMap0ind = chanMap - 1;
-xcoords   = ones(Nchannels,1);
-ycoords   = [1:Nchannels]';
-kcoords   = ones(Nchannels,1); % grouping of channels (i.e. tetrode groups)
+xcoords   = 400*[1:Nchannels]; % spacing by 100, to make recognized as separate channels.. %ones(Nchannels,1);
+ycoords   = 400*[1:Nchannels]'; % spacing by 100 to make recognized as separate channels
+kcoords   = [1:Nchannels]; % grouping of channels (i.e. tetrode groups)
 
-fs = 25000; % sampling frequency
-save('C:\DATA\Spikes\20150601_chan32_4_900s\chanMap.mat', ...
+fs = 24414.0625; % sampling frequency
+save('/home/kgg/Desktop/spikesorting_kilosort/sample_data/Pancho-220716-144103-sandbox/RSn2_chanMap.mat', ...
     'chanMap','connected', 'xcoords', 'ycoords', 'kcoords', 'chanMap0ind', 'fs')
 
-%%
-
-Nchannels = 32;
-connected = true(Nchannels, 1);
-chanMap   = 1:Nchannels;
-chanMap0ind = chanMap - 1;
-
-xcoords   = repmat([1 2 3 4]', 1, Nchannels/4);
-xcoords   = xcoords(:);
-ycoords   = repmat(1:Nchannels/4, 4, 1);
-ycoords   = ycoords(:);
-kcoords   = ones(Nchannels,1); % grouping of channels (i.e. tetrode groups)
-
-fs = 25000; % sampling frequency
-
-save('C:\DATA\Spikes\Piroska\chanMap.mat', ...
-    'chanMap','connected', 'xcoords', 'ycoords', 'kcoords', 'chanMap0ind', 'fs')
-%%
+%
+% 
+% Nchannels = 256;
+% connected = true(Nchannels, 1);
+% chanMap   = 1:Nchannels;
+% chanMap0ind = chanMap - 1;
+% 
+% xcoords   = repmat([1 2 3 4]', 1, Nchannels/4);
+% xcoords   = xcoords(:);
+% ycoords   = repmat(1:Nchannels/4, 4, 1);
+% ycoords   = ycoords(:);
+% kcoords   = ones(Nchannels,1); % grouping of channels (i.e. tetrode groups)
+% 
+% fs = 24414.0625; % sampling frequency
+% 
+% save('/home/kgg/Desktop/spikesorting_kilosort/sample_data/220716_RSn2_1to32/RSn2_chanMap2.mat', ...
+%     'chanMap','connected', 'xcoords', 'ycoords', 'kcoords', 'chanMap0ind', 'fs')
+%
 
 % kcoords is used to forcefully restrict templates to channels in the same
 % channel group. An option can be set in the master_file to allow a fraction 
