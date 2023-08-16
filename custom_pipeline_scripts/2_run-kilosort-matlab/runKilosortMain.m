@@ -4,15 +4,16 @@
 %
 function exitcode = runKilosortMain(animal, ddate, batchesPerStore, channelsPerBatch)
     %% add paths for Kilosort, other packages
-    KS_install_path = '/data5/Kedar/neural_spike_sorting/kilosort_installation/';
-    KS_data_path = '/data5/Kedar/neural_spike_sorting/kilosort_data/';
-
-    addpath(genpath([KS_install_path 'Kilosort-2.5'])) % path to kilosort folder
-    addpath([KS_install_path 'npy-matlab']) % for converting to Phy
+    KS_install_path = '/home/kgg/Desktop/kilosort-2.5/';
+    NPYM_install_path = '/home/kgg/Desktop/npy-matlab/';
+    KS_data_path = '/home/kgg/Desktop/kilosort_data/';
+    
+    addpath(genpath([KS_install_path])) % path to kilosort folder
+    addpath(genpath([NPYM_install_path])) % for converting to Phy
 
     %% select animal/date/time
     day_folder_path = [KS_data_path animal '/' ddate '/'];
-    config_file_path = [KS_install_path 'Kilosort-2.5/custom_matlab_scripts/kilosortConfig.m']; %CHANGE
+    config_file_path = [KS_install_path '/custom_pipeline_scripts/2_run-kilosort-matlab/kilosortConfig.m']; %CHANGE
 
     %% run kilosort algorithm for all stores,batches
     %
@@ -21,9 +22,9 @@ function exitcode = runKilosortMain(animal, ddate, batchesPerStore, channelsPerB
 
     assert(channelsPerBatch * batchesPerStore == 256);
     if channelsPerBatch==64
-        chanmap_file_path = [KS_data_path 'chanMap64.mat']; %CHANGE
+        chanmap_file_path = [KS_install_path '/custom_pipeline_scripts/2_run-kilosort-matlab/chanMap64.mat']; %CHANGE
     elseif channelsPerBatch==32
-        chanmap_file_path = [KS_data_path 'chanMap32.mat']; %CHANGE
+        chanmap_file_path = [KS_install_path '/custom_pipeline_scripts/2_run-kilosort-matlab/chanMap32.mat']; %CHANGE
     else
         assert(false, 'make this chanmap')
     end
@@ -170,7 +171,7 @@ function exitcode = runKilosortMain(animal, ddate, batchesPerStore, channelsPerB
             %movefile([batch_data_path '/temp_wh.dat'], data5_backup_path)
         else
             % LT 5/29/23, just in case need to rerun.
-            movefile([batch_data_path '/' batchHeader '.bin'], data5_backup_path)
+            %movefile([batch_data_path '/' batchHeader '.bin'], data5_backup_path)
         end
         
         % save some memory

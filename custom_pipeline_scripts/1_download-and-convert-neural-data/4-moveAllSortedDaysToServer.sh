@@ -1,8 +1,11 @@
 #!/bin/bash
 
-a=$1
-cd /data5/Kedar/neural_spike_sorting/kilosort_data/$a
+# load necessary variables/paths
+source /home/kgg/Desktop/kilosort-2.5/custom_pipeline_scripts/globals.sh
 
+a=$1
+cd $LOCAL_DATA_PATH/$a
+echo "$LOCAL_DATA_PATH/$a"
 for d in ./*/; do
   dat=$(basename $d)
   echo $dat
