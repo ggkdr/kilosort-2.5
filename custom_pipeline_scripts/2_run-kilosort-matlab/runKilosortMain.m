@@ -21,7 +21,9 @@ function exitcode = runKilosortMain(animal, ddate, batchesPerStore, channelsPerB
     batches = [1:batchesPerStore];
 
     assert(channelsPerBatch * batchesPerStore == 256);
-    if channelsPerBatch==64
+    if channelsPerBatch==128
+        chanmap_file_path = [KS_install_path '/custom_pipeline_scripts/2_run-kilosort-matlab/chanMap128.mat']; %CHANGE
+    elseif channelsPerBatch==64
         chanmap_file_path = [KS_install_path '/custom_pipeline_scripts/2_run-kilosort-matlab/chanMap64.mat']; %CHANGE
     elseif channelsPerBatch==32
         chanmap_file_path = [KS_install_path '/custom_pipeline_scripts/2_run-kilosort-matlab/chanMap32.mat']; %CHANGE

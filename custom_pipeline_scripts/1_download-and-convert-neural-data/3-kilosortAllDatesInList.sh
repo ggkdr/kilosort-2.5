@@ -27,6 +27,8 @@ a="Pancho"
 # date_list=(220815)
 # date_list=(230620)
 date_list=(230621 230622 230623 230626)
+# 221015
+# 221024
 
 # paths
 #SERVER_PATH="/mnt/hopfield_data01/ltian/recordings/$a"

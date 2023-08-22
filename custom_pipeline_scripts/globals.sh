@@ -3,8 +3,8 @@
 # storing all global variables here
 stores=("RSn2" "RSn3")
 channelsPerStore=256 # should not change
-# batchesPerStore=4 # may wish to increase to 8, if kilosort is running out of memory
-batchesPerStore=2 # may wish to increase to 8, if kilosort is running out of memory
+batchesPerStore=4 # may wish to increase to 8, if kilosort is running out of memory [optimal]
+# batchesPerStore=2 # may wish to increase to 8, if kilosort is running out of memory [2 is too large and slow.]
 channelsPerBatch=$(($channelsPerStore / $batchesPerStore))
 
 KILOSORT_PATH="/home/kgg/Desktop/kilosort-2.5"

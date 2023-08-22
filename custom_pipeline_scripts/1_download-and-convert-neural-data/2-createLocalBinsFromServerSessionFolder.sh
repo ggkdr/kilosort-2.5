@@ -21,12 +21,6 @@ SERVER_SESSION_PATH="$SERVER_DATA_PATH/$a/$date/$session_name"
 LOCAL_SESSION_PATH="$LOCAL_DATA_PATH/$a/$date/$session_name"
 mkdir -p $LOCAL_SESSION_PATH
 
-# halt script if this date has already been processed
-if [ -f $LOCAL_SESSION_PATH/RSn2_batch1/RSn2_batch1.bin ]; then
-  echo "ERROR: seems like ${session_name} has already been converted...ending script"
-  exit 1
-fi
-
 # for each .sev file in $SERVER_SESSION_PATH, create a symlink in $LOCAL_SESSION_PATH
 cd $SERVER_SESSION_PATH
 for f in *.sev; do
@@ -38,6 +32,15 @@ cd $LOCAL_SESSION_PATH
 
 for s in ${stores[@]}; do
   for b in $(seq 1 $batchesPerStore); do
+
+    # halt script if this date has already been processed
+    if [ -f $LOCAL_SESSION_PATH/${s}_batch${b}.bin ]; then
+      echo "NOTE: seems like $LOCAL_SESSION_PATH/${s}_batch${b}.bin has already been converted... SKIPPING"
+      # exit 1
+      continue
+    fi
+    
+    echo "CONVERTING sev2bin for $LOCAL_SESSION_PATH/${s}_batch${b}..."
     ind=$(($b-1))
     startChan=$(($ind*$channelsPerBatch+1))
     endChan=$(($b*$channelsPerBatch))

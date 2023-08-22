@@ -1,6 +1,6 @@
 %  create a channel map file
 % 
-Nchannels = 64;
+Nchannels = 128;
 connected = true(Nchannels, 1);
 chanMap   = 1:Nchannels;
 chanMap0ind = chanMap - 1;
@@ -9,7 +9,9 @@ ycoords   = 400*[1:Nchannels]'; % spacing by 100 to make recognized as separate 
 kcoords   = [1:Nchannels]; % grouping of channels (i.e. tetrode groups)
 
 fs = 24414.0625; % sampling frequency
-save('/data3/Kedar/neural_sink/spike_sorting/kilosort/RSn3_chanMap.mat', ...
+% save('/data3/Kedar/neural_sink/spike_sorting/kilosort/RSn3_chanMap.mat', ...
+%     'chanMap','connected', 'xcoords', 'ycoords', 'kcoords', 'chanMap0ind', 'fs')
+save('chanMap128.mat', ...
     'chanMap','connected', 'xcoords', 'ycoords', 'kcoords', 'chanMap0ind', 'fs')
 
 %
