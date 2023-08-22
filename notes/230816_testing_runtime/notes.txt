@@ -1,0 +1,20 @@
+Params:
+- 4 batches per 256 chan.
+
+Convert to sev
+- 3 hours
+- no failures.
+
+Kilosort:
+- 2/4 ks working fine --> 8-9G on GPU.
+- Other 2 crash, likely due to memory on GPU.
+- For the 2 running: each max 60-80G (but not simult?). 
+- The 2 succeeded.
+--> SOLUTION: could reduce size of ops.NT, which is number sample data pts read in per batch. Currently is 65600
+
+try3:
+- dates 2 and 3, retry using half batch size:
+Here using 512 instead of 1024
+ops.NT                  = 64*512+ ops.ntbuff; % must be (multiple of 32) + ntbuff. This is the batch size (try decreasing if out of memory). 
+- Results: 17-18 hrs, max RAM 60-75G
+- uses ~4G in RAM per run.

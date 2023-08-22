@@ -1,0 +1,76 @@
+/mnt/Freiwald/ltian/recordings/Pancho/230626
+/home/kgg/Desktop/kilosort_data/Pancho/230626
+mkdir: cannot create directory ‘RSn2_batch1’: File exists
+cat: ./Pancho-230626-152043//RSn2_batch1.bin: No such file or directory
+rm: cannot remove './Pancho-230626-152043//RSn2_batch1.bin': No such file or directory
+cat: ./Pancho-230626-161215//RSn2_batch1.bin: No such file or directory
+rm: cannot remove './Pancho-230626-161215//RSn2_batch1.bin': No such file or directory
+mkdir: cannot create directory ‘RSn2_batch2’: File exists
+cat: ./Pancho-230626-152043//RSn2_batch2.bin: No such file or directory
+rm: cannot remove './Pancho-230626-152043//RSn2_batch2.bin': No such file or directory
+cat: ./Pancho-230626-161215//RSn2_batch2.bin: No such file or directory
+rm: cannot remove './Pancho-230626-161215//RSn2_batch2.bin': No such file or directory
+mkdir: cannot create directory ‘RSn3_batch1’: File exists
+cat: ./Pancho-230626-152043//RSn3_batch1.bin: No such file or directory
+rm: cannot remove './Pancho-230626-152043//RSn3_batch1.bin': No such file or directory
+cat: ./Pancho-230626-161215//RSn3_batch1.bin: No such file or directory
+rm: cannot remove './Pancho-230626-161215//RSn3_batch1.bin': No such file or directory
+mkdir: cannot create directory ‘RSn3_batch2’: File exists
+cat: ./Pancho-230626-152043//RSn3_batch2.bin: No such file or directory
+rm: cannot remove './Pancho-230626-152043//RSn3_batch2.bin': No such file or directory
+cat: ./Pancho-230626-161215//RSn3_batch2.bin: No such file or directory
+rm: cannot remove './Pancho-230626-161215//RSn3_batch2.bin': No such file or directory
+[Warning: Directory already exists.] 
+[> In runKilosortMain (line 34)] 
+Looking for data inside /home/kgg/Desktop/kilosort_data/Pancho/230626/RSn2_batch1 
+Time   0s. Computing whitening matrix.. 
+Getting channel whitening matrix... 
+Channel-whitening matrix computed. 
+Time  11s. Loading raw data and applying filters... 
+Time 166s. Finished preprocessing 812 batches. 
+Final ops:
+                trange: [0 Inf]
+              NchanTOT: 128
+                    fs: 2.4414e+04
+                fshigh: 300
+    minfr_goodchannels: 0
+                    Th: [6 4]
+                   lam: 10
+              AUCsplit: 0.9000
+                 minFR: 0.0200
+              momentum: [20 400]
+             sigmaMask: 30
+                 ThPre: 8
+                 spkTh: -6
+               reorder: 1
+                 nskip: 25
+                   GPU: 1
+          nfilt_factor: 5
+                ntbuff: 64
+                    NT: 65600
+        whiteningRange: 32
+              nSkipCov: 25
+             scaleproc: 200
+                  nPCs: 3
+                useRAM: 0
+                 fproc: '/home/kgg/Desktop/kilosort_data/Pancho/230626/RSn2_batch1/temp_wh.dat'
+               chanMap: [128x1 double]
+                   sig: 20
+               nblocks: 0
+               fbinary: '/home/kgg/Desktop/kilosort_data/Pancho/230626/RSn2_batch1/RSn2_batch1.bin'
+                   nt0: 61
+                nt0min: 20
+                tstart: 0
+                  tend: 53264601
+           sampsToRead: 53264601
+                 twind: 0
+                Nbatch: 812
+                 igood: [128x1 logical]
+                 Nchan: 128
+                 Nfilt: 640
+               kcoords: [128x1 double]
+                NTbuff: 65792
+
+Time 172s. Optimizing templates ...
+172.80 sec, 1 / 812 batches, 27 units, nspks: 7.7133, mu: 18.5790, nst0: 126, merges: 0.0000, 0.0000, 1.3000 
+265.26 sec, 101 / 812 batches, 205 units, nspks: 7515.7772, mu: 14.4645, nst0: 9370, merges: 54.8252, 0.2475, 13.5765 

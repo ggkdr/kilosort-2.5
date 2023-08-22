@@ -1,0 +1,21 @@
+
+
+TDT writes binary files using column-order. Note: it actually writes
+using C-order, which is row-major, but it first takes transpose of array, which makes this actually 
+column major
+- line 1931 in TDTbin2py: ddd = np.zeros([nchan, npts], dtype=current_data_format)
+- here takes transpose: ddd.astype(export_type, copy=False).T.tofile(file_handle)
+- https://stackoverflow.com/questions/27266338/what-does-the-order-parameter-in-numpy-array-do-aka-what-is-contiguous-order
+
+KS reads in binary files column-order, which means it will read the TDT files correctly:
+- (here says should use matlab's fwrite) https://github.com/MouseLand/Kilosort/wiki/1.-The-GUI
+- matlab's fwrite using column-order (https://www.mathworks.com/help/matlab/ref/fwrite.html)
+- and here: https://github.com/cortex-lab/KiloSort/issues/189
+
+Concatenation using cat $f/$bin_name >> $sb/$bin_name just does simple concatenation. 
+Since this is column order, this works fine. 
+
+CONCLUSION:
+- binary files should be correct!
+
+

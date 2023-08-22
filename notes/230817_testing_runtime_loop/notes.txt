@@ -1,0 +1,15 @@
+Running 3-kilosort..Loop.sh, goal is to get 4 going simulit.
+Only change from 8/16 is reducing the kilosort batchsize by 1/2,
+to:
+ops.NT                  = 64*256+ ops.ntbuff; % must be (multiple of 32) + ntbuff. This is the batch size (try decreasing if out of memory). 
+
+previously was
+
+% ops.NT                  = 64*512+ ops.ntbuff; % must be (multiple of 32) + ntbuff. This is the batch size (try decreasing if out of memory). 
+
+==8/18/23 - Only partially complete sev conversion, but did not print any error. nothing is running...
+--> No difference in ks memory usage (RAM and GPU) depending on batch size.
+
+PROBLEM (weird):
+- 2/4 ks crashed.
+- is still taking like 8.5G on RAM, even though is now only 1/4 batch size compared to first test, which also took 8.5G.

@@ -1,0 +1,148 @@
+/mnt/Freiwald/ltian/recordings/Pancho/221015
+/home/kgg/Desktop/kilosort_data/Pancho/221015
+--PROCESSING: Pancho-221015-140901
+NOTE: seems like /home/kgg/Desktop/kilosort_data/Pancho/221015/Pancho-221015-140901/RSn2_batch1.bin has already been converted... SKIPPING
+NOTE: seems like /home/kgg/Desktop/kilosort_data/Pancho/221015/Pancho-221015-140901/RSn2_batch2.bin has already been converted... SKIPPING
+NOTE: seems like /home/kgg/Desktop/kilosort_data/Pancho/221015/Pancho-221015-140901/RSn2_batch3.bin has already been converted... SKIPPING
+NOTE: seems like /home/kgg/Desktop/kilosort_data/Pancho/221015/Pancho-221015-140901/RSn2_batch4.bin has already been converted... SKIPPING
+NOTE: seems like /home/kgg/Desktop/kilosort_data/Pancho/221015/Pancho-221015-140901/RSn3_batch1.bin has already been converted... SKIPPING
+NOTE: seems like /home/kgg/Desktop/kilosort_data/Pancho/221015/Pancho-221015-140901/RSn3_batch2.bin has already been converted... SKIPPING
+NOTE: seems like /home/kgg/Desktop/kilosort_data/Pancho/221015/Pancho-221015-140901/RSn3_batch3.bin has already been converted... SKIPPING
+NOTE: seems like /home/kgg/Desktop/kilosort_data/Pancho/221015/Pancho-221015-140901/RSn3_batch4.bin has already been converted... SKIPPING
+--PROCESSING: Pancho-221015-151508
+NOTE: seems like /home/kgg/Desktop/kilosort_data/Pancho/221015/Pancho-221015-151508/RSn2_batch1.bin has already been converted... SKIPPING
+NOTE: seems like /home/kgg/Desktop/kilosort_data/Pancho/221015/Pancho-221015-151508/RSn2_batch2.bin has already been converted... SKIPPING
+NOTE: seems like /home/kgg/Desktop/kilosort_data/Pancho/221015/Pancho-221015-151508/RSn2_batch3.bin has already been converted... SKIPPING
+NOTE: seems like /home/kgg/Desktop/kilosort_data/Pancho/221015/Pancho-221015-151508/RSn2_batch4.bin has already been converted... SKIPPING
+NOTE: seems like /home/kgg/Desktop/kilosort_data/Pancho/221015/Pancho-221015-151508/RSn3_batch1.bin has already been converted... SKIPPING
+NOTE: seems like /home/kgg/Desktop/kilosort_data/Pancho/221015/Pancho-221015-151508/RSn3_batch2.bin has already been converted... SKIPPING
+NOTE: seems like /home/kgg/Desktop/kilosort_data/Pancho/221015/Pancho-221015-151508/RSn3_batch3.bin has already been converted... SKIPPING
+NOTE: seems like /home/kgg/Desktop/kilosort_data/Pancho/221015/Pancho-221015-151508/RSn3_batch4.bin has already been converted... SKIPPING
+MOVING: this old dir RSn2_batch1
+** Concatting bin files to here: RSn2_batch1/RSn2_batch1.bin
+... Appended this file (and deleted it): ./Pancho-221015-140901//RSn2_batch1.bin
+... Appended this file (and deleted it): ./Pancho-221015-151508//RSn2_batch1.bin
+MOVING: this old dir RSn2_batch2
+** Concatting bin files to here: RSn2_batch2/RSn2_batch2.bin
+... Appended this file (and deleted it): ./Pancho-221015-140901//RSn2_batch2.bin
+... Appended this file (and deleted it): ./Pancho-221015-151508//RSn2_batch2.bin
+MOVING: this old dir RSn2_batch3
+** Concatting bin files to here: RSn2_batch3/RSn2_batch3.bin
+... Appended this file (and deleted it): ./Pancho-221015-140901//RSn2_batch3.bin
+... Appended this file (and deleted it): ./Pancho-221015-151508//RSn2_batch3.bin
+MOVING: this old dir RSn2_batch4
+** Concatting bin files to here: RSn2_batch4/RSn2_batch4.bin
+... Appended this file (and deleted it): ./Pancho-221015-140901//RSn2_batch4.bin
+... Appended this file (and deleted it): ./Pancho-221015-151508//RSn2_batch4.bin
+MOVING: this old dir RSn3_batch1
+** Concatting bin files to here: RSn3_batch1/RSn3_batch1.bin
+... Appended this file (and deleted it): ./Pancho-221015-140901//RSn3_batch1.bin
+... Appended this file (and deleted it): ./Pancho-221015-151508//RSn3_batch1.bin
+MOVING: this old dir RSn3_batch2
+** Concatting bin files to here: RSn3_batch2/RSn3_batch2.bin
+... Appended this file (and deleted it): ./Pancho-221015-140901//RSn3_batch2.bin
+... Appended this file (and deleted it): ./Pancho-221015-151508//RSn3_batch2.bin
+MOVING: this old dir RSn3_batch3
+** Concatting bin files to here: RSn3_batch3/RSn3_batch3.bin
+... Appended this file (and deleted it): ./Pancho-221015-140901//RSn3_batch3.bin
+... Appended this file (and deleted it): ./Pancho-221015-151508//RSn3_batch3.bin
+MOVING: this old dir RSn3_batch4
+** Concatting bin files to here: RSn3_batch4/RSn3_batch4.bin
+... Appended this file (and deleted it): ./Pancho-221015-140901//RSn3_batch4.bin
+... Appended this file (and deleted it): ./Pancho-221015-151508//RSn3_batch4.bin
+** Running kilosort...
+[Warning: Directory already exists.] 
+[> In runKilosortMain (line 34)] 
+Looking for data inside /home/kgg/Desktop/kilosort_data/Pancho/221015/RSn2_batch1 
+Time   0s. Computing whitening matrix.. 
+Getting channel whitening matrix... 
+Channel-whitening matrix computed. 
+Time  32s. Loading raw data and applying filters... 
+Time 1004s. Finished preprocessing 23575 batches. 
+Final ops:
+                trange: [0 Inf]
+              NchanTOT: 64
+                    fs: 2.4414e+04
+                fshigh: 300
+    minfr_goodchannels: 0
+                    Th: [6 4]
+                   lam: 10
+              AUCsplit: 0.9000
+                 minFR: 0.0200
+              momentum: [20 400]
+             sigmaMask: 30
+                 ThPre: 8
+                 spkTh: -6
+               reorder: 1
+                 nskip: 25
+                   GPU: 1
+          nfilt_factor: 5
+                ntbuff: 64
+                    NT: 16448
+        whiteningRange: 32
+              nSkipCov: 25
+             scaleproc: 200
+                  nPCs: 3
+                useRAM: 0
+                 fproc: '/home/kgg/Desktop/kilosort_data/Pancho/221015/RSn2_batch1/temp_wh.dat'
+               chanMap: [64x1 double]
+                   sig: 20
+               nblocks: 0
+               fbinary: '/home/kgg/Desktop/kilosort_data/Pancho/221015/RSn2_batch1/RSn2_batch1.bin'
+                   nt0: 61
+                nt0min: 20
+                tstart: 0
+                  tend: 387751301
+           sampsToRead: 387751301
+                 twind: 0
+                Nbatch: 23575
+                 igood: [64x1 logical]
+                 Nchan: 64
+                 Nfilt: 320
+               kcoords: [64x1 double]
+                NTbuff: 16640
+
+Time 1019s. Optimizing templates ...
+1018.87 sec, 1 / 23575 batches, 14 units, nspks: 1.4839, mu: 16.4178, nst0: 26, merges: 0.0000, 0.0000, 0.7000 
+1043.58 sec, 101 / 23575 batches, 138 units, nspks: 1225.5223, mu: 18.0755, nst0: 1241, merges: 28.2167, 0.0814, 7.5857 
+1068.80 sec, 201 / 23575 batches, 97 units, nspks: 1319.7422, mu: 10.7485, nst0: 1313, merges: 37.2627, 0.0249, 7.6206 
+1093.63 sec, 301 / 23575 batches, 106 units, nspks: 1391.1753, mu: 10.5685, nst0: 1379, merges: 36.1691, 0.0030, 7.1985 
+1119.23 sec, 401 / 23575 batches, 117 units, nspks: 1428.4347, mu: 10.1048, nst0: 1157, merges: 35.7536, 0.0258, 6.8747 
+{Error using gpuArray/subsref
+An unexpected error occurred trying to launch a kernel. The CUDA error was:
+invalid argument
+
+Error in learnTemplates (line 231)
+                W(:,Nfilt + [1:size(dWU0,3)],:) = W0(:,ones(1,size(dWU0,3)),:);
+                % initialize temporal components of waveforms
+
+Error in learnAndSolve8b (line 35)
+    rez     = learnTemplates(rez, rez.iorig);
+
+Error in runKilosortMain (line 115)
+        rez = learnAndSolve8b(rez, iseed);
+} 
+Command exited with non-zero status 1
+	Command being timed: "./3-kilosortOneDate.sh Pancho 221015"
+	User time (seconds): 1108.36
+	System time (seconds): 271.13
+	Percent of CPU this job got: 69%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 33:11.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1805080
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 902
+	Minor (reclaiming a frame) page faults: 570825
+	Voluntary context switches: 1986599
+	Involuntary context switches: 46075
+	Swaps: 0
+	File system inputs: 881359712
+	File system outputs: 872444232
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1

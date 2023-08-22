@@ -1,0 +1,37 @@
+/mnt/Freiwald/ltian/recordings/Pancho/230622
+/home/kgg/Desktop/kilosort_data/Pancho/230622
+mkdir: cannot create directory ‘RSn2_batch1’: File exists
+cat: ./Pancho-230622-145556//RSn2_batch1.bin: No such file or directory
+rm: cannot remove './Pancho-230622-145556//RSn2_batch1.bin': No such file or directory
+cat: ./Pancho-230622-162005//RSn2_batch1.bin: No such file or directory
+rm: cannot remove './Pancho-230622-162005//RSn2_batch1.bin': No such file or directory
+cat: ./Pancho-230622-164806//RSn2_batch1.bin: No such file or directory
+rm: cannot remove './Pancho-230622-164806//RSn2_batch1.bin': No such file or directory
+mkdir: cannot create directory ‘RSn2_batch2’: File exists
+cat: ./Pancho-230622-145556//RSn2_batch2.bin: No such file or directory
+rm: cannot remove './Pancho-230622-145556//RSn2_batch2.bin': No such file or directory
+cat: ./Pancho-230622-162005//RSn2_batch2.bin: No such file or directory
+rm: cannot remove './Pancho-230622-162005//RSn2_batch2.bin': No such file or directory
+cat: ./Pancho-230622-164806//RSn2_batch2.bin: No such file or directory
+rm: cannot remove './Pancho-230622-164806//RSn2_batch2.bin': No such file or directory
+mkdir: cannot create directory ‘RSn3_batch1’: File exists
+cat: ./Pancho-230622-145556//RSn3_batch1.bin: No such file or directory
+rm: cannot remove './Pancho-230622-145556//RSn3_batch1.bin': No such file or directory
+cat: ./Pancho-230622-162005//RSn3_batch1.bin: No such file or directory
+rm: cannot remove './Pancho-230622-162005//RSn3_batch1.bin': No such file or directory
+cat: ./Pancho-230622-164806//RSn3_batch1.bin: No such file or directory
+rm: cannot remove './Pancho-230622-164806//RSn3_batch1.bin': No such file or directory
+mkdir: cannot create directory ‘RSn3_batch2’: File exists
+cat: ./Pancho-230622-145556//RSn3_batch2.bin: No such file or directory
+rm: cannot remove './Pancho-230622-145556//RSn3_batch2.bin': No such file or directory
+cat: ./Pancho-230622-162005//RSn3_batch2.bin: No such file or directory
+rm: cannot remove './Pancho-230622-162005//RSn3_batch2.bin': No such file or directory
+cat: ./Pancho-230622-164806//RSn3_batch2.bin: No such file or directory
+rm: cannot remove './Pancho-230622-164806//RSn3_batch2.bin': No such file or directory
+[Warning: Directory already exists.] 
+[> In runKilosortMain (line 34)] 
+Looking for data inside /home/kgg/Desktop/kilosort_data/Pancho/230622/RSn2_batch1 
+Time   0s. Computing whitening matrix.. 
+Getting channel whitening matrix... 
+Channel-whitening matrix computed. 
+Time  25s. Loading raw data and applying filters... 

@@ -1,0 +1,15 @@
+==8/15/23
+- 4 runs simult
+- 2 bins (i.e. 4 bins per 512 chans)
+- 230620 to 230623 (data days), each a separate instance of 3-kilosort...sh
+
+Results:
+- only did sev conversion (bug in kilosort code).
+- 3/4 had at lease one sev conversion killed.
+- mem usage ranged from 32 to 70GB (max)
+- duration around 4hrs.
+
+Notes:
+- this was before increased swap memory to 64G (was 2G).
+- log-1.txt is for sev.
+- log-1-ks.txt is for kilosort, but I stopped it early.
