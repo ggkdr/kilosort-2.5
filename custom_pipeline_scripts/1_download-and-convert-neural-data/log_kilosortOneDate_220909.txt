@@ -1,0 +1,6 @@
+/mnt/Freiwald/ltian/recordings/Pancho/220909
+/home/kgg/Desktop/kilosort_data/Pancho/220909
+--PROCESSING: Pancho-220909-153120
+CONVERTING sev2bin for /home/kgg/Desktop/kilosort_data/Pancho/220909/Pancho-220909-153120/RSn2_batch1...
+/home/kgg/Desktop/kilosort-2.5/custom_pipeline_scripts/1_download-and-convert-neural-data/1-convertSev2Bin.py:12: Warning: no tsq file found, attempting to read sev files
+  read_block('.', store=store, channel=channels, export='interlaced')
