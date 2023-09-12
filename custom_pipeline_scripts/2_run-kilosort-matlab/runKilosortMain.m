@@ -184,4 +184,9 @@ function exitcode = runKilosortMain(animal, ddate, batchesPerStore, channelsPerB
     exitcode="success";
     fid = fopen(fullfile(day_folder_path, 'KS_done.txt'), 'w');
     fclose(fid);
+
+    dateNum = str2num(ddate)
+    kspostprocess_extract(animal, dateNum)
+    kspostprocess_metrics_and_label(animal, dateNum)
+    % after this, run manually: kspostprocess_CURATE (makes guis with kspp_manual_curate_merge, and then updates dataset with kspp_finalize_after_manual)
 end
