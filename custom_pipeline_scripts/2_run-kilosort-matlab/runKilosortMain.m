@@ -53,6 +53,13 @@ function exitcode = runKilosortMain(animal, ddate, batchesPerStore, channelsPerB
         store = store_batches{i}{1};
         batch = store_batches{i}{2};
 
+        % HACK, to just do one batch
+        % % disp(strcmp(store, 'RSn2'))
+        % % disp(strcmp(batch, '1'))
+        % if ~strcmp(store, 'RSn3') | ~strcmp(batch, '4')
+        %     continue
+        % end
+
     % for i=1:length(stores)
     %     store = stores{i};
 

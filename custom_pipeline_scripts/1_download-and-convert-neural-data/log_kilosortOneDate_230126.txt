@@ -1,0 +1,862 @@
+/mnt/Freiwald/ltian/recordings/Pancho/230126
+/home/kgg/Desktop/kilosort_data/Pancho/230126
+--PROCESSING: Pancho-230126-145532
+CONVERTING sev2bin for /home/kgg/Desktop/kilosort_data/Pancho/230126/Pancho-230126-145532/RSn2_batch1...
+/home/kgg/Desktop/kilosort-2.5/custom_pipeline_scripts/1_download-and-convert-neural-data/1-convertSev2Bin.py:12: Warning: no tsq file found, attempting to read sev files
+  read_block('.', store=store, channel=channels, export='interlaced')
+exporting SEV stream RSn2...
+CONVERTING sev2bin for /home/kgg/Desktop/kilosort_data/Pancho/230126/Pancho-230126-145532/RSn2_batch2...
+/home/kgg/Desktop/kilosort-2.5/custom_pipeline_scripts/1_download-and-convert-neural-data/1-convertSev2Bin.py:12: Warning: no tsq file found, attempting to read sev files
+  read_block('.', store=store, channel=channels, export='interlaced')
+exporting SEV stream RSn2...
+CONVERTING sev2bin for /home/kgg/Desktop/kilosort_data/Pancho/230126/Pancho-230126-145532/RSn2_batch3...
+/home/kgg/Desktop/kilosort-2.5/custom_pipeline_scripts/1_download-and-convert-neural-data/1-convertSev2Bin.py:12: Warning: no tsq file found, attempting to read sev files
+  read_block('.', store=store, channel=channels, export='interlaced')
+exporting SEV stream RSn2...
+CONVERTING sev2bin for /home/kgg/Desktop/kilosort_data/Pancho/230126/Pancho-230126-145532/RSn2_batch4...
+/home/kgg/Desktop/kilosort-2.5/custom_pipeline_scripts/1_download-and-convert-neural-data/1-convertSev2Bin.py:12: Warning: no tsq file found, attempting to read sev files
+  read_block('.', store=store, channel=channels, export='interlaced')
+exporting SEV stream RSn2...
+CONVERTING sev2bin for /home/kgg/Desktop/kilosort_data/Pancho/230126/Pancho-230126-145532/RSn3_batch1...
+/home/kgg/Desktop/kilosort-2.5/custom_pipeline_scripts/1_download-and-convert-neural-data/1-convertSev2Bin.py:12: Warning: no tsq file found, attempting to read sev files
+  read_block('.', store=store, channel=channels, export='interlaced')
+exporting SEV stream RSn3...
+CONVERTING sev2bin for /home/kgg/Desktop/kilosort_data/Pancho/230126/Pancho-230126-145532/RSn3_batch2...
+/home/kgg/Desktop/kilosort-2.5/custom_pipeline_scripts/1_download-and-convert-neural-data/1-convertSev2Bin.py:12: Warning: no tsq file found, attempting to read sev files
+  read_block('.', store=store, channel=channels, export='interlaced')
+exporting SEV stream RSn3...
+CONVERTING sev2bin for /home/kgg/Desktop/kilosort_data/Pancho/230126/Pancho-230126-145532/RSn3_batch3...
+/home/kgg/Desktop/kilosort-2.5/custom_pipeline_scripts/1_download-and-convert-neural-data/1-convertSev2Bin.py:12: Warning: no tsq file found, attempting to read sev files
+  read_block('.', store=store, channel=channels, export='interlaced')
+exporting SEV stream RSn3...
+CONVERTING sev2bin for /home/kgg/Desktop/kilosort_data/Pancho/230126/Pancho-230126-145532/RSn3_batch4...
+/home/kgg/Desktop/kilosort-2.5/custom_pipeline_scripts/1_download-and-convert-neural-data/1-convertSev2Bin.py:12: Warning: no tsq file found, attempting to read sev files
+  read_block('.', store=store, channel=channels, export='interlaced')
+exporting SEV stream RSn3...
+DELETING: this old dir, to avoid partial bin files... RSn2_batch1
+** Concatting bin files to here: RSn2_batch1/RSn2_batch1.bin
+... Appended this file (and deleted it): ./Pancho-230126-145532/RSn2_batch1.bin
+** Concatting bin files to here: RSn2_batch2/RSn2_batch2.bin
+... Appended this file (and deleted it): ./Pancho-230126-145532/RSn2_batch2.bin
+** Concatting bin files to here: RSn2_batch3/RSn2_batch3.bin
+... Appended this file (and deleted it): ./Pancho-230126-145532/RSn2_batch3.bin
+** Concatting bin files to here: RSn2_batch4/RSn2_batch4.bin
+... Appended this file (and deleted it): ./Pancho-230126-145532/RSn2_batch4.bin
+** Concatting bin files to here: RSn3_batch1/RSn3_batch1.bin
+... Appended this file (and deleted it): ./Pancho-230126-145532/RSn3_batch1.bin
+** Concatting bin files to here: RSn3_batch2/RSn3_batch2.bin
+... Appended this file (and deleted it): ./Pancho-230126-145532/RSn3_batch2.bin
+** Concatting bin files to here: RSn3_batch3/RSn3_batch3.bin
+... Appended this file (and deleted it): ./Pancho-230126-145532/RSn3_batch3.bin
+** Concatting bin files to here: RSn3_batch4/RSn3_batch4.bin
+... Appended this file (and deleted it): ./Pancho-230126-145532/RSn3_batch4.bin
+** Running kilosort...
+[Warning: Directory already exists.] 
+[> In runKilosortMain (line 34)] 
+Looking for data inside /home/kgg/Desktop/kilosort_data/Pancho/230126/RSn2_batch1 
+Time   0s. Computing whitening matrix.. 
+Getting channel whitening matrix... 
+Channel-whitening matrix computed. 
+Time   9s. Loading raw data and applying filters... 
+Time 295s. Finished preprocessing 10206 batches. 
+Final ops:
+                trange: [0 Inf]
+              NchanTOT: 64
+                    fs: 2.4414e+04
+                fshigh: 300
+    minfr_goodchannels: 0
+                    Th: [6 4]
+                   lam: 10
+              AUCsplit: 0.9000
+                 minFR: 0.0200
+              momentum: [20 400]
+             sigmaMask: 30
+                 ThPre: 8
+                 spkTh: -6
+               reorder: 1
+                 nskip: 25
+                   GPU: 1
+          nfilt_factor: 5
+                ntbuff: 64
+                    NT: 32832
+        whiteningRange: 32
+              nSkipCov: 25
+             scaleproc: 200
+                  nPCs: 3
+                useRAM: 0
+                 fproc: '/home/kgg/Desktop/kilosort_data/Pancho/230126/RSn2_batch1/temp_wh.dat'
+               chanMap: [64x1 double]
+                   sig: 20
+               nblocks: 0
+               fbinary: '/home/kgg/Desktop/kilosort_data/Pancho/230126/RSn2_batch1/RSn2_batch1.bin'
+                   nt0: 61
+                nt0min: 20
+                tstart: 0
+                  tend: 335058011
+           sampsToRead: 335058011
+                 twind: 0
+                Nbatch: 10206
+                 igood: [64x1 logical]
+                 Nchan: 64
+                 Nfilt: 320
+               kcoords: [64x1 double]
+                NTbuff: 33024
+
+Time 301s. Optimizing templates ...
+301.41 sec, 1 / 10206 batches, 11 units, nspks: 2.1891, mu: 10.0000, nst0: 38, merges: 0.0000, 0.0000, 0.6000 
+312.03 sec, 101 / 10206 batches, 100 units, nspks: 2053.7833, mu: 11.5411, nst0: 2407, merges: 27.4875, 0.0000, 6.8181 
+321.17 sec, 201 / 10206 batches, 112 units, nspks: 2147.1472, mu: 10.9574, nst0: 2280, merges: 34.3240, 0.0000, 7.1746 
+330.63 sec, 301 / 10206 batches, 104 units, nspks: 2315.3236, mu: 9.1162, nst0: 1990, merges: 36.3077, 0.0866, 6.9357 
+340.00 sec, 401 / 10206 batches, 116 units, nspks: 2333.6856, mu: 9.2133, nst0: 1964, merges: 34.5473, 0.0761, 6.7417 
+349.82 sec, 501 / 10206 batches, 120 units, nspks: 2548.1713, mu: 8.9715, nst0: 2134, merges: 35.3359, 0.1027, 7.4184 
+359.89 sec, 601 / 10206 batches, 130 units, nspks: 2753.1361, mu: 8.8168, nst0: 2846, merges: 35.5401, 0.0603, 7.1964 
+369.91 sec, 701 / 10206 batches, 133 units, nspks: 2654.3273, mu: 9.3050, nst0: 2265, merges: 35.2338, 0.2803, 7.1072 
+380.07 sec, 801 / 10206 batches, 137 units, nspks: 2691.1542, mu: 8.6421, nst0: 2913, merges: 34.6709, 0.1569, 7.0095 
+390.58 sec, 901 / 10206 batches, 136 units, nspks: 2970.4523, mu: 9.0530, nst0: 2884, merges: 34.5543, 0.0505, 7.0525 
+400.95 sec, 1001 / 10206 batches, 140 units, nspks: 2627.0149, mu: 8.7222, nst0: 2638, merges: 34.4704, 0.1375, 7.1420 
+411.26 sec, 1101 / 10206 batches, 141 units, nspks: 2732.9049, mu: 8.2348, nst0: 2580, merges: 34.1495, 0.0167, 6.8672 
+421.49 sec, 1201 / 10206 batches, 137 units, nspks: 2722.3945, mu: 8.3114, nst0: 3044, merges: 35.6667, 0.1367, 7.2772 
+432.04 sec, 1301 / 10206 batches, 141 units, nspks: 2952.8099, mu: 8.3556, nst0: 2452, merges: 34.8985, 0.1139, 7.0933 
+443.04 sec, 1401 / 10206 batches, 142 units, nspks: 2924.3599, mu: 8.7855, nst0: 3073, merges: 33.8965, 0.3072, 6.6776 
+453.69 sec, 1501 / 10206 batches, 148 units, nspks: 2734.9199, mu: 8.4583, nst0: 2833, merges: 32.6409, 0.1191, 6.6399 
+464.48 sec, 1601 / 10206 batches, 137 units, nspks: 2810.6399, mu: 8.3250, nst0: 3622, merges: 34.6689, 0.0145, 6.6284 
+474.95 sec, 1701 / 10206 batches, 140 units, nspks: 2875.9385, mu: 8.1888, nst0: 2643, merges: 34.3627, 0.0300, 6.9154 
+485.29 sec, 1801 / 10206 batches, 137 units, nspks: 2697.0895, mu: 8.0124, nst0: 2147, merges: 34.6918, 0.0350, 6.8589 
+495.37 sec, 1901 / 10206 batches, 143 units, nspks: 2880.0291, mu: 8.1560, nst0: 3735, merges: 33.9066, 0.0043, 7.1025 
+505.30 sec, 2001 / 10206 batches, 146 units, nspks: 2927.0200, mu: 8.0998, nst0: 4032, merges: 34.5084, 0.0005, 6.7128 
+515.15 sec, 2101 / 10206 batches, 146 units, nspks: 2642.1934, mu: 7.9322, nst0: 2239, merges: 35.3728, 0.0001, 7.2020 
+528.97 sec, 2201 / 10206 batches, 145 units, nspks: 2804.1408, mu: 8.0906, nst0: 3044, merges: 33.3184, 0.1270, 6.8071 
+542.59 sec, 2301 / 10206 batches, 142 units, nspks: 2857.3287, mu: 8.0076, nst0: 3272, merges: 34.0400, 0.0154, 6.9135 
+556.43 sec, 2401 / 10206 batches, 144 units, nspks: 2953.4499, mu: 8.0502, nst0: 3914, merges: 33.7537, 0.1104, 6.7527 
+569.92 sec, 2501 / 10206 batches, 149 units, nspks: 2839.4549, mu: 7.9776, nst0: 2591, merges: 33.0800, 0.0134, 6.5057 
+583.92 sec, 2601 / 10206 batches, 147 units, nspks: 3021.4651, mu: 7.9646, nst0: 3813, merges: 32.5275, 0.0016, 6.4451 
+597.76 sec, 2701 / 10206 batches, 146 units, nspks: 2948.8577, mu: 7.9283, nst0: 3112, merges: 32.5439, 0.0002, 6.2671 
+611.89 sec, 2801 / 10206 batches, 145 units, nspks: 2794.9013, mu: 7.9860, nst0: 2223, merges: 33.6088, 0.0000, 6.4809 
+625.68 sec, 2901 / 10206 batches, 147 units, nspks: 2897.2490, mu: 7.8823, nst0: 2996, merges: 33.4801, 0.0000, 6.5947 
+639.32 sec, 3001 / 10206 batches, 150 units, nspks: 2811.2296, mu: 7.9677, nst0: 3154, merges: 33.6530, 0.0000, 6.9943 
+652.92 sec, 3101 / 10206 batches, 158 units, nspks: 2859.5715, mu: 8.0424, nst0: 2533, merges: 33.2286, 0.0000, 6.6882 
+666.54 sec, 3201 / 10206 batches, 153 units, nspks: 2943.3017, mu: 7.9428, nst0: 2520, merges: 32.1435, 0.0000, 6.4737 
+679.81 sec, 3301 / 10206 batches, 151 units, nspks: 2827.4966, mu: 7.8216, nst0: 3022, merges: 32.2519, 0.0000, 6.4294 
+693.39 sec, 3401 / 10206 batches, 163 units, nspks: 2884.4197, mu: 7.9169, nst0: 3861, merges: 32.4298, 0.0000, 6.8335 
+707.18 sec, 3501 / 10206 batches, 153 units, nspks: 3065.0881, mu: 7.9458, nst0: 2748, merges: 34.2596, 0.0000, 6.8305 
+721.39 sec, 3601 / 10206 batches, 156 units, nspks: 3053.5396, mu: 8.0814, nst0: 2435, merges: 34.2194, 0.0000, 6.7466 
+734.90 sec, 3701 / 10206 batches, 163 units, nspks: 2557.2773, mu: 7.9465, nst0: 2415, merges: 34.6140, 0.0000, 7.0410 
+747.97 sec, 3801 / 10206 batches, 166 units, nspks: 2483.5367, mu: 7.9626, nst0: 2261, merges: 35.6150, 0.0000, 7.1899 
+761.53 sec, 3901 / 10206 batches, 168 units, nspks: 3013.2670, mu: 8.1034, nst0: 2836, merges: 33.9973, 0.0000, 7.0486 
+775.64 sec, 4001 / 10206 batches, 163 units, nspks: 2717.2716, mu: 8.0494, nst0: 2575, merges: 36.5199, 0.0000, 7.5856 
+789.35 sec, 4101 / 10206 batches, 162 units, nspks: 2973.5094, mu: 8.0605, nst0: 2519, merges: 34.8049, 0.0000, 6.5860 
+803.41 sec, 4201 / 10206 batches, 164 units, nspks: 2984.3388, mu: 7.9090, nst0: 3489, merges: 35.0193, 0.0000, 6.7499 
+817.44 sec, 4301 / 10206 batches, 163 units, nspks: 2916.5945, mu: 7.8476, nst0: 2461, merges: 35.0407, 0.0000, 7.1358 
+831.28 sec, 4401 / 10206 batches, 165 units, nspks: 2999.2306, mu: 7.9354, nst0: 3394, merges: 34.8348, 0.0000, 6.7589 
+845.51 sec, 4501 / 10206 batches, 170 units, nspks: 3069.4621, mu: 7.9796, nst0: 2702, merges: 33.7687, 0.0717, 6.7474 
+859.62 sec, 4601 / 10206 batches, 170 units, nspks: 2931.0555, mu: 7.9546, nst0: 2644, merges: 34.7873, 0.0087, 7.1658 
+874.17 sec, 4701 / 10206 batches, 176 units, nspks: 3156.0532, mu: 8.0928, nst0: 2650, merges: 34.5167, 0.0011, 7.0295 
+888.77 sec, 4801 / 10206 batches, 183 units, nspks: 3036.0082, mu: 7.9450, nst0: 2930, merges: 34.3959, 0.0001, 7.0752 
+903.07 sec, 4901 / 10206 batches, 172 units, nspks: 2971.2999, mu: 7.8970, nst0: 2447, merges: 34.8380, 0.0000, 6.8055 
+917.60 sec, 5001 / 10206 batches, 176 units, nspks: 3206.3211, mu: 7.8820, nst0: 4202, merges: 34.5162, 0.0000, 6.6571 
+931.75 sec, 5101 / 10206 batches, 176 units, nspks: 3141.8892, mu: 8.0698, nst0: 3213, merges: 36.2599, 0.0000, 7.2782 
+949.16 sec, 5201 / 10206 batches, 179 units, nspks: 3072.3556, mu: 7.8717, nst0: 2570, merges: 33.5040, 0.0000, 6.3735 
+966.72 sec, 5301 / 10206 batches, 175 units, nspks: 3046.9617, mu: 7.8410, nst0: 3462, merges: 33.7734, 0.0000, 6.6311 
+984.80 sec, 5401 / 10206 batches, 184 units, nspks: 3231.3268, mu: 7.9620, nst0: 3099, merges: 33.2854, 0.0000, 6.5464 
+1002.74 sec, 5501 / 10206 batches, 174 units, nspks: 3087.2667, mu: 7.8487, nst0: 3258, merges: 34.3517, 0.0000, 6.3654 
+1020.48 sec, 5601 / 10206 batches, 179 units, nspks: 2979.4743, mu: 7.9031, nst0: 2627, merges: 34.3507, 0.0000, 6.6867 
+1038.41 sec, 5701 / 10206 batches, 176 units, nspks: 2987.6176, mu: 7.8160, nst0: 2652, merges: 35.1724, 0.0000, 6.9190 
+1056.31 sec, 5801 / 10206 batches, 173 units, nspks: 3133.5369, mu: 7.8207, nst0: 2798, merges: 34.6619, 0.0135, 7.1043 
+1074.33 sec, 5901 / 10206 batches, 191 units, nspks: 3053.5367, mu: 7.9869, nst0: 3524, merges: 33.4539, 0.0016, 6.9190 
+1091.97 sec, 6001 / 10206 batches, 180 units, nspks: 3018.5539, mu: 7.8880, nst0: 3827, merges: 34.9565, 0.0208, 6.8971 
+1109.86 sec, 6101 / 10206 batches, 186 units, nspks: 3177.3464, mu: 7.9515, nst0: 2632, merges: 36.0782, 0.0025, 7.2705 
+1128.05 sec, 6201 / 10206 batches, 193 units, nspks: 3138.5651, mu: 8.0358, nst0: 2698, merges: 35.7639, 0.0003, 6.9366 
+1145.91 sec, 6301 / 10206 batches, 184 units, nspks: 3226.7634, mu: 7.9411, nst0: 4188, merges: 34.9957, 0.0000, 7.1366 
+1163.92 sec, 6401 / 10206 batches, 181 units, nspks: 3217.2475, mu: 7.9396, nst0: 3013, merges: 34.9131, 0.0000, 6.8692 
+1182.16 sec, 6501 / 10206 batches, 187 units, nspks: 3259.6922, mu: 7.9325, nst0: 3565, merges: 33.8433, 0.0000, 6.6467 
+1200.44 sec, 6601 / 10206 batches, 185 units, nspks: 3151.7315, mu: 7.9641, nst0: 2790, merges: 34.3715, 0.0000, 6.8637 
+1218.89 sec, 6701 / 10206 batches, 180 units, nspks: 3238.6442, mu: 7.9803, nst0: 2801, merges: 34.7125, 0.0000, 7.1282 
+1234.77 sec, 6801 / 10206 batches, 179 units, nspks: 3159.9729, mu: 7.8185, nst0: 2708, merges: 34.7745, 0.0000, 6.6383 
+1252.84 sec, 6901 / 10206 batches, 190 units, nspks: 3211.5299, mu: 7.9497, nst0: 3159, merges: 32.7760, 0.0000, 6.4325 
+1271.29 sec, 7001 / 10206 batches, 194 units, nspks: 3177.3331, mu: 8.0878, nst0: 2680, merges: 34.5102, 0.0531, 6.7771 
+1289.62 sec, 7101 / 10206 batches, 192 units, nspks: 3274.0906, mu: 8.0869, nst0: 3728, merges: 34.5830, 0.0065, 6.7171 
+1308.13 sec, 7201 / 10206 batches, 198 units, nspks: 3184.2992, mu: 8.0491, nst0: 2801, merges: 35.3364, 0.0008, 7.1002 
+1326.44 sec, 7301 / 10206 batches, 186 units, nspks: 3207.4330, mu: 7.9856, nst0: 2883, merges: 35.1072, 0.0001, 6.6456 
+1344.55 sec, 7401 / 10206 batches, 181 units, nspks: 3228.3051, mu: 7.9962, nst0: 2830, merges: 34.5859, 0.0000, 6.8796 
+1362.80 sec, 7501 / 10206 batches, 184 units, nspks: 3124.9813, mu: 7.8770, nst0: 3001, merges: 34.8963, 0.0000, 6.9574 
+1380.88 sec, 7601 / 10206 batches, 184 units, nspks: 3160.2393, mu: 7.8768, nst0: 3035, merges: 34.5552, 0.0000, 6.7518 
+1399.18 sec, 7701 / 10206 batches, 192 units, nspks: 3153.2906, mu: 7.9159, nst0: 3815, merges: 34.7545, 0.0000, 7.2561 
+1417.97 sec, 7801 / 10206 batches, 203 units, nspks: 3246.5859, mu: 8.0944, nst0: 3589, merges: 35.0456, 0.0000, 7.1892 
+1436.47 sec, 7901 / 10206 batches, 194 units, nspks: 3136.9646, mu: 7.8937, nst0: 3142, merges: 36.7822, 0.0000, 7.3261 
+1454.48 sec, 8001 / 10206 batches, 213 units, nspks: 3041.3221, mu: 7.9612, nst0: 2754, merges: 34.4510, 0.0000, 7.2753 
+1473.57 sec, 8101 / 10206 batches, 192 units, nspks: 3217.2901, mu: 7.9666, nst0: 3086, merges: 36.9256, 0.0000, 7.3441 
+1492.66 sec, 8201 / 10206 batches, 203 units, nspks: 3254.5232, mu: 8.0206, nst0: 2986, merges: 33.9028, 0.0000, 6.8412 
+1511.28 sec, 8301 / 10206 batches, 200 units, nspks: 3358.1493, mu: 8.1086, nst0: 3975, merges: 35.5091, 0.0000, 6.9212 
+1530.31 sec, 8401 / 10206 batches, 191 units, nspks: 3328.4440, mu: 7.8988, nst0: 3583, merges: 34.1228, 0.1043, 6.5930 
+1549.61 sec, 8501 / 10206 batches, 212 units, nspks: 3231.3089, mu: 8.0286, nst0: 2700, merges: 33.4375, 0.0127, 6.8956 
+1564.17 sec, 8601 / 10206 batches, 195 units, nspks: 3239.9527, mu: 8.0328, nst0: 2996, merges: 35.3219, 0.0015, 6.7498 
+1583.42 sec, 8701 / 10206 batches, 203 units, nspks: 3384.2585, mu: 8.0348, nst0: 3564, merges: 35.1224, 0.0002, 7.0158 
+1602.62 sec, 8801 / 10206 batches, 200 units, nspks: 3140.9002, mu: 7.9813, nst0: 3134, merges: 35.1970, 0.0000, 6.8677 
+1622.09 sec, 8901 / 10206 batches, 209 units, nspks: 3321.4900, mu: 8.0967, nst0: 3063, merges: 34.8950, 0.0000, 7.2291 
+1641.19 sec, 9001 / 10206 batches, 215 units, nspks: 3201.2558, mu: 8.0828, nst0: 3014, merges: 35.4610, 0.0000, 7.2887 
+1659.85 sec, 9101 / 10206 batches, 218 units, nspks: 3219.7701, mu: 8.1148, nst0: 2911, merges: 35.2464, 0.0000, 7.0658 
+1678.31 sec, 9201 / 10206 batches, 208 units, nspks: 3009.2985, mu: 8.0818, nst0: 3556, merges: 35.4172, 0.0000, 6.8972 
+1696.45 sec, 9301 / 10206 batches, 200 units, nspks: 2929.9081, mu: 7.9291, nst0: 3521, merges: 35.1514, 0.0000, 7.0530 
+1714.65 sec, 9401 / 10206 batches, 202 units, nspks: 3159.1284, mu: 8.0031, nst0: 2706, merges: 34.4671, 0.0000, 7.1556 
+1733.01 sec, 9501 / 10206 batches, 212 units, nspks: 3282.4692, mu: 8.1241, nst0: 2995, merges: 34.0177, 0.0254, 7.1649 
+1752.95 sec, 9601 / 10206 batches, 213 units, nspks: 3499.9295, mu: 8.1979, nst0: 3742, merges: 35.3591, 0.0031, 6.8835 
+1772.71 sec, 9701 / 10206 batches, 217 units, nspks: 3520.0931, mu: 8.2875, nst0: 2943, merges: 35.2487, 0.0004, 6.9762 
+1792.40 sec, 9801 / 10206 batches, 203 units, nspks: 3419.2110, mu: 8.1892, nst0: 3975, merges: 36.2345, 0.0532, 7.0584 
+1811.98 sec, 9901 / 10206 batches, 211 units, nspks: 3422.3333, mu: 8.2758, nst0: 3658, merges: 34.8870, 0.0231, 7.0732 
+1831.72 sec, 10001 / 10206 batches, 212 units, nspks: 3371.1936, mu: 8.2403, nst0: 2896, merges: 35.1072, 0.0028, 7.0265 
+1851.56 sec, 10101 / 10206 batches, 219 units, nspks: 3320.3790, mu: 8.2773, nst0: 3810, merges: 34.8643, 0.0003, 7.1434 
+1871.56 sec, 10201 / 10206 batches, 218 units, nspks: 3369.5572, mu: 8.2626, nst0: 3244, merges: 34.8656, 0.0136, 7.1532 
+Elapsed time is 1872.514693 seconds.
+Finished learning templates 
+Time 1873s. Optimizing templates ...
+1873.07 sec, 1 / 10206 batches, 210 units, nspks: 3333.0000, mu: 8.1636, nst0: 5952 
+1896.85 sec, 101 / 10206 batches, 210 units, nspks: 375694.0000, mu: 8.1636, nst0: 7505 
+1920.42 sec, 201 / 10206 batches, 210 units, nspks: 722895.0000, mu: 8.1636, nst0: 6587 
+1943.57 sec, 301 / 10206 batches, 210 units, nspks: 1042639.0000, mu: 8.1636, nst0: 5295 
+1966.66 sec, 401 / 10206 batches, 210 units, nspks: 1364582.0000, mu: 8.1636, nst0: 5240 
+1989.88 sec, 501 / 10206 batches, 210 units, nspks: 1685000.0000, mu: 8.1636, nst0: 5396 
+2013.04 sec, 601 / 10206 batches, 210 units, nspks: 2011154.0000, mu: 8.1636, nst0: 6403 
+2036.17 sec, 701 / 10206 batches, 210 units, nspks: 2330018.0000, mu: 8.1636, nst0: 5559 
+2058.91 sec, 801 / 10206 batches, 210 units, nspks: 2654170.0000, mu: 8.1636, nst0: 6411 
+2081.76 sec, 901 / 10206 batches, 210 units, nspks: 2999480.0000, mu: 8.1636, nst0: 6166 
+2104.13 sec, 1001 / 10206 batches, 210 units, nspks: 3325948.0000, mu: 8.1636, nst0: 5899 
+2126.07 sec, 1101 / 10206 batches, 210 units, nspks: 3648636.0000, mu: 8.1636, nst0: 5538 
+2148.60 sec, 1201 / 10206 batches, 210 units, nspks: 3964084.0000, mu: 8.1636, nst0: 6601 
+2171.91 sec, 1301 / 10206 batches, 210 units, nspks: 4301753.0000, mu: 8.1636, nst0: 5360 
+2195.38 sec, 1401 / 10206 batches, 210 units, nspks: 4651645.0000, mu: 8.1636, nst0: 6636 
+2218.50 sec, 1501 / 10206 batches, 210 units, nspks: 4985323.0000, mu: 8.1636, nst0: 5987 
+2241.30 sec, 1601 / 10206 batches, 210 units, nspks: 5311664.0000, mu: 8.1636, nst0: 7462 
+2267.03 sec, 1701 / 10206 batches, 210 units, nspks: 5626018.0000, mu: 8.1636, nst0: 5691 
+2285.70 sec, 1801 / 10206 batches, 210 units, nspks: 5935577.0000, mu: 8.1636, nst0: 4882 
+2303.77 sec, 1901 / 10206 batches, 210 units, nspks: 6250928.0000, mu: 8.1636, nst0: 7486 
+2324.19 sec, 2001 / 10206 batches, 210 units, nspks: 6566694.0000, mu: 8.1636, nst0: 7786 
+2344.67 sec, 2101 / 10206 batches, 210 units, nspks: 6880059.0000, mu: 8.1636, nst0: 4857 
+2367.14 sec, 2201 / 10206 batches, 210 units, nspks: 7191769.0000, mu: 8.1636, nst0: 6331 
+2389.72 sec, 2301 / 10206 batches, 210 units, nspks: 7504515.0000, mu: 8.1636, nst0: 6570 
+2412.21 sec, 2401 / 10206 batches, 210 units, nspks: 7820038.0000, mu: 8.1636, nst0: 7606 
+2434.85 sec, 2501 / 10206 batches, 210 units, nspks: 8132228.0000, mu: 8.1636, nst0: 5633 
+2457.45 sec, 2601 / 10206 batches, 210 units, nspks: 8443212.0000, mu: 8.1636, nst0: 7468 
+2480.26 sec, 2701 / 10206 batches, 210 units, nspks: 8758103.0000, mu: 8.1636, nst0: 6403 
+2502.82 sec, 2801 / 10206 batches, 210 units, nspks: 9066059.0000, mu: 8.1636, nst0: 4783 
+2525.29 sec, 2901 / 10206 batches, 210 units, nspks: 9369550.0000, mu: 8.1636, nst0: 6164 
+2547.17 sec, 3001 / 10206 batches, 210 units, nspks: 9673271.0000, mu: 8.1636, nst0: 6388 
+2569.31 sec, 3101 / 10206 batches, 210 units, nspks: 9976637.0000, mu: 8.1636, nst0: 5278 
+2591.76 sec, 3201 / 10206 batches, 210 units, nspks: 10284509.0000, mu: 8.1636, nst0: 5342 
+2613.97 sec, 3301 / 10206 batches, 210 units, nspks: 10580438.0000, mu: 8.1636, nst0: 6091 
+2642.97 sec, 3401 / 10206 batches, 210 units, nspks: 10881394.0000, mu: 8.1636, nst0: 7371 
+2665.74 sec, 3501 / 10206 batches, 210 units, nspks: 11193322.0000, mu: 8.1636, nst0: 5395 
+2688.75 sec, 3601 / 10206 batches, 210 units, nspks: 11525654.0000, mu: 8.1636, nst0: 5017 
+2710.84 sec, 3701 / 10206 batches, 210 units, nspks: 11818123.0000, mu: 8.1636, nst0: 4912 
+2732.14 sec, 3801 / 10206 batches, 210 units, nspks: 12081410.0000, mu: 8.1636, nst0: 4826 
+2754.01 sec, 3901 / 10206 batches, 210 units, nspks: 12373019.0000, mu: 8.1636, nst0: 5710 
+2775.51 sec, 4001 / 10206 batches, 210 units, nspks: 12671284.0000, mu: 8.1636, nst0: 5191 
+2796.83 sec, 4101 / 10206 batches, 210 units, nspks: 12966129.0000, mu: 8.1636, nst0: 5327 
+2819.02 sec, 4201 / 10206 batches, 210 units, nspks: 13271913.0000, mu: 8.1636, nst0: 6615 
+2841.32 sec, 4301 / 10206 batches, 210 units, nspks: 13583408.0000, mu: 8.1636, nst0: 5095 
+2863.87 sec, 4401 / 10206 batches, 210 units, nspks: 13891725.0000, mu: 8.1636, nst0: 6503 
+2886.49 sec, 4501 / 10206 batches, 210 units, nspks: 14204923.0000, mu: 8.1636, nst0: 5339 
+2909.25 sec, 4601 / 10206 batches, 210 units, nspks: 14519206.0000, mu: 8.1636, nst0: 5272 
+2932.56 sec, 4701 / 10206 batches, 210 units, nspks: 14844797.0000, mu: 8.1636, nst0: 5306 
+2955.67 sec, 4801 / 10206 batches, 210 units, nspks: 15163164.0000, mu: 8.1636, nst0: 5648 
+2978.34 sec, 4901 / 10206 batches, 210 units, nspks: 15467543.0000, mu: 8.1636, nst0: 5041 
+2999.73 sec, 5001 / 10206 batches, 210 units, nspks: 15778458.0000, mu: 8.1636, nst0: 7625 
+3014.49 sec, 5101 / 10206 batches, 210 units, nspks: 16103834.0000, mu: 8.1636, nst0: 6214 
+3028.91 sec, 5201 / 10206 batches, 210 units, nspks: 16411254.0000, mu: 8.1636, nst0: 5061 
+3043.36 sec, 5301 / 10206 batches, 210 units, nspks: 16716271.0000, mu: 8.1636, nst0: 6583 
+3058.06 sec, 5401 / 10206 batches, 210 units, nspks: 17034071.0000, mu: 8.1636, nst0: 6057 
+3073.09 sec, 5501 / 10206 batches, 210 units, nspks: 17336834.0000, mu: 8.1636, nst0: 6155 
+3088.65 sec, 5601 / 10206 batches, 210 units, nspks: 17648294.0000, mu: 8.1636, nst0: 5142 
+3103.95 sec, 5701 / 10206 batches, 210 units, nspks: 17946531.0000, mu: 8.1636, nst0: 5151 
+3119.42 sec, 5801 / 10206 batches, 210 units, nspks: 18257042.0000, mu: 8.1636, nst0: 5340 
+3134.85 sec, 5901 / 10206 batches, 210 units, nspks: 18569458.0000, mu: 8.1636, nst0: 6651 
+3149.67 sec, 6001 / 10206 batches, 210 units, nspks: 18873608.0000, mu: 8.1636, nst0: 7063 
+3164.29 sec, 6101 / 10206 batches, 210 units, nspks: 19187360.0000, mu: 8.1636, nst0: 5119 
+3178.97 sec, 6201 / 10206 batches, 210 units, nspks: 19501929.0000, mu: 8.1636, nst0: 5239 
+3193.70 sec, 6301 / 10206 batches, 210 units, nspks: 19815449.0000, mu: 8.1636, nst0: 7511 
+3212.41 sec, 6401 / 10206 batches, 210 units, nspks: 20134515.0000, mu: 8.1636, nst0: 5794 
+3232.44 sec, 6501 / 10206 batches, 210 units, nspks: 20458663.0000, mu: 8.1636, nst0: 6599 
+3251.81 sec, 6601 / 10206 batches, 210 units, nspks: 20772216.0000, mu: 8.1636, nst0: 5417 
+3271.05 sec, 6701 / 10206 batches, 210 units, nspks: 21094500.0000, mu: 8.1636, nst0: 5393 
+3302.85 sec, 6801 / 10206 batches, 210 units, nspks: 21407981.0000, mu: 8.1636, nst0: 5321 
+3321.36 sec, 6901 / 10206 batches, 210 units, nspks: 21719726.0000, mu: 8.1636, nst0: 6060 
+3339.88 sec, 7001 / 10206 batches, 210 units, nspks: 22036964.0000, mu: 8.1636, nst0: 5373 
+3361.64 sec, 7101 / 10206 batches, 210 units, nspks: 22356936.0000, mu: 8.1636, nst0: 6812 
+3384.64 sec, 7201 / 10206 batches, 210 units, nspks: 22673737.0000, mu: 8.1636, nst0: 5470 
+3407.95 sec, 7301 / 10206 batches, 210 units, nspks: 22992571.0000, mu: 8.1636, nst0: 5517 
+3431.14 sec, 7401 / 10206 batches, 210 units, nspks: 23309835.0000, mu: 8.1636, nst0: 5350 
+3454.39 sec, 7501 / 10206 batches, 210 units, nspks: 23617696.0000, mu: 8.1636, nst0: 5684 
+3477.68 sec, 7601 / 10206 batches, 210 units, nspks: 23926762.0000, mu: 8.1636, nst0: 5737 
+3501.08 sec, 7701 / 10206 batches, 210 units, nspks: 24242766.0000, mu: 8.1636, nst0: 6895 
+3524.74 sec, 7801 / 10206 batches, 210 units, nspks: 24565431.0000, mu: 8.1636, nst0: 6564 
+3545.52 sec, 7901 / 10206 batches, 210 units, nspks: 24878663.0000, mu: 8.1636, nst0: 5981 
+3568.92 sec, 8001 / 10206 batches, 210 units, nspks: 25192684.0000, mu: 8.1636, nst0: 5272 
+3592.50 sec, 8101 / 10206 batches, 210 units, nspks: 25518340.0000, mu: 8.1636, nst0: 5939 
+3615.89 sec, 8201 / 10206 batches, 210 units, nspks: 25841284.0000, mu: 8.1636, nst0: 5560 
+3639.61 sec, 8301 / 10206 batches, 210 units, nspks: 26164120.0000, mu: 8.1636, nst0: 7093 
+3663.36 sec, 8401 / 10206 batches, 210 units, nspks: 26502386.0000, mu: 8.1636, nst0: 6601 
+3686.81 sec, 8501 / 10206 batches, 210 units, nspks: 26829696.0000, mu: 8.1636, nst0: 5204 
+3709.96 sec, 8601 / 10206 batches, 210 units, nspks: 27152642.0000, mu: 8.1636, nst0: 5681 
+3733.61 sec, 8701 / 10206 batches, 210 units, nspks: 27487701.0000, mu: 8.1636, nst0: 6538 
+3756.82 sec, 8801 / 10206 batches, 210 units, nspks: 27805819.0000, mu: 8.1636, nst0: 5851 
+3780.85 sec, 8901 / 10206 batches, 210 units, nspks: 28142967.0000, mu: 8.1636, nst0: 5775 
+3802.22 sec, 9001 / 10206 batches, 210 units, nspks: 28466094.0000, mu: 8.1636, nst0: 5730 
+3821.39 sec, 9101 / 10206 batches, 210 units, nspks: 28784999.0000, mu: 8.1636, nst0: 5506 
+3842.66 sec, 9201 / 10206 batches, 210 units, nspks: 29102688.0000, mu: 8.1636, nst0: 6662 
+3864.26 sec, 9301 / 10206 batches, 210 units, nspks: 29413037.0000, mu: 8.1636, nst0: 6586 
+3886.36 sec, 9401 / 10206 batches, 210 units, nspks: 29735714.0000, mu: 8.1636, nst0: 5243 
+3908.38 sec, 9501 / 10206 batches, 210 units, nspks: 30066981.0000, mu: 8.1636, nst0: 5667 
+3926.71 sec, 9601 / 10206 batches, 210 units, nspks: 30414334.0000, mu: 8.1636, nst0: 6817 
+3949.28 sec, 9701 / 10206 batches, 210 units, nspks: 30762714.0000, mu: 8.1636, nst0: 5529 
+3971.66 sec, 9801 / 10206 batches, 210 units, nspks: 31108485.0000, mu: 8.1636, nst0: 7177 
+3994.40 sec, 9901 / 10206 batches, 210 units, nspks: 31458018.0000, mu: 8.1636, nst0: 6826 
+4016.90 sec, 10001 / 10206 batches, 210 units, nspks: 31803472.0000, mu: 8.1636, nst0: 5636 
+4039.35 sec, 10101 / 10206 batches, 210 units, nspks: 32141695.0000, mu: 8.1636, nst0: 6914 
+4060.72 sec, 10201 / 10206 batches, 210 units, nspks: 32484730.0000, mu: 8.1636, nst0: 6076 
+Elapsed time is 4061.672530 seconds.
+Number of spikes before applying cutoff: 61212631
+initialized spike counts
+merged 51 into 49 
+merged 54 into 49 
+merged 47 into 50 
+Found 0 splits, checked 1/210 clusters, nccg 0 
+Found 7 splits, checked 101/217 clusters, nccg 47 
+Found 12 splits, checked 201/222 clusters, nccg 78 
+Finished splitting. Found 16 splits, checked 226/226 clusters, nccg 88 
+found 11 good units 
+Saving results to Phy  
+Saving final results in rez2  
+Looking for data inside /home/kgg/Desktop/kilosort_data/Pancho/230126/RSn2_batch2 
+Time   0s. Computing whitening matrix.. 
+Getting channel whitening matrix... 
+Channel-whitening matrix computed. 
+Time  12s. Loading raw data and applying filters... 
+Time 374s. Finished preprocessing 10206 batches. 
+Final ops:
+                trange: [0 Inf]
+              NchanTOT: 64
+                    fs: 2.4414e+04
+                fshigh: 300
+    minfr_goodchannels: 0
+                    Th: [6 4]
+                   lam: 10
+              AUCsplit: 0.9000
+                 minFR: 0.0200
+              momentum: [20 400]
+             sigmaMask: 30
+                 ThPre: 8
+                 spkTh: -6
+               reorder: 1
+                 nskip: 25
+                   GPU: 1
+          nfilt_factor: 5
+                ntbuff: 64
+                    NT: 32832
+        whiteningRange: 32
+              nSkipCov: 25
+             scaleproc: 200
+                  nPCs: 3
+                useRAM: 0
+                 fproc: '/home/kgg/Desktop/kilosort_data/Pancho/230126/RSn2_batch2/temp_wh.dat'
+               chanMap: [64x1 double]
+                   sig: 20
+               nblocks: 0
+               fbinary: '/home/kgg/Desktop/kilosort_data/Pancho/230126/RSn2_batch2/RSn2_batch2.bin'
+                   nt0: 61
+                nt0min: 20
+                tstart: 0
+                  tend: 335058011
+           sampsToRead: 335058011
+                 twind: 0
+                Nbatch: 10206
+                 igood: [64x1 logical]
+                 Nchan: 64
+                 Nfilt: 320
+               kcoords: [64x1 double]
+                NTbuff: 33024
+
+Time 380s. Optimizing templates ...
+380.39 sec, 1 / 10206 batches, 15 units, nspks: 0.8940, mu: 10.0000, nst0: 10, merges: 0.0000, 0.0000, 0.8000 
+393.46 sec, 101 / 10206 batches, 48 units, nspks: 995.3003, mu: 10.0000, nst0: 1282, merges: 31.5595, 0.0000, 7.3436 
+407.26 sec, 201 / 10206 batches, 50 units, nspks: 1220.0968, mu: 10.0000, nst0: 1144, merges: 35.0873, 0.0000, 7.2514 
+422.07 sec, 301 / 10206 batches, 57 units, nspks: 1257.0853, mu: 9.8699, nst0: 1187, merges: 35.9881, 0.0000, 7.3814 
+437.24 sec, 401 / 10206 batches, 57 units, nspks: 1311.0863, mu: 9.5292, nst0: 1124, merges: 36.8896, 0.0729, 7.4679 
+452.51 sec, 501 / 10206 batches, 64 units, nspks: 1356.3238, mu: 9.6922, nst0: 1256, merges: 36.2087, 0.0089, 7.3084 
+467.93 sec, 601 / 10206 batches, 64 units, nspks: 1479.8109, mu: 9.0897, nst0: 1379, merges: 37.1920, 0.0011, 7.1680 
+483.47 sec, 701 / 10206 batches, 69 units, nspks: 1524.6660, mu: 9.3712, nst0: 1403, merges: 35.8456, 0.0001, 7.1464 
+498.84 sec, 801 / 10206 batches, 66 units, nspks: 1571.4594, mu: 8.6344, nst0: 1539, merges: 37.0828, 0.0000, 7.4174 
+514.76 sec, 901 / 10206 batches, 73 units, nspks: 1655.9851, mu: 8.6411, nst0: 1457, merges: 36.2899, 0.0000, 7.6505 
+530.28 sec, 1001 / 10206 batches, 71 units, nspks: 1618.7879, mu: 8.4474, nst0: 1591, merges: 36.7121, 0.0000, 7.6052 
+545.94 sec, 1101 / 10206 batches, 73 units, nspks: 1689.9149, mu: 8.3772, nst0: 1605, merges: 36.8575, 0.0000, 7.2835 
+561.54 sec, 1201 / 10206 batches, 74 units, nspks: 1733.4727, mu: 8.4276, nst0: 1777, merges: 35.5797, 0.0000, 6.7466 
+577.04 sec, 1301 / 10206 batches, 70 units, nspks: 1750.2882, mu: 8.1112, nst0: 1567, merges: 36.5266, 0.0000, 7.1080 
+592.79 sec, 1401 / 10206 batches, 92 units, nspks: 1729.6448, mu: 9.0647, nst0: 1745, merges: 34.4671, 0.0000, 6.9321 
+608.36 sec, 1501 / 10206 batches, 74 units, nspks: 1724.1425, mu: 8.2539, nst0: 1685, merges: 35.4830, 0.0000, 6.8266 
+624.21 sec, 1601 / 10206 batches, 74 units, nspks: 1797.1557, mu: 8.1829, nst0: 2204, merges: 36.3046, 0.0000, 7.2650 
+639.59 sec, 1701 / 10206 batches, 75 units, nspks: 1773.5417, mu: 8.1387, nst0: 1635, merges: 36.6708, 0.0000, 6.9931 
+655.20 sec, 1801 / 10206 batches, 77 units, nspks: 1807.0562, mu: 8.0557, nst0: 1631, merges: 36.6752, 0.0000, 7.2225 
+670.79 sec, 1901 / 10206 batches, 79 units, nspks: 1890.5992, mu: 7.8722, nst0: 2411, merges: 36.3580, 0.0000, 7.1032 
+686.46 sec, 2001 / 10206 batches, 77 units, nspks: 1888.4041, mu: 7.8691, nst0: 2277, merges: 36.4470, 0.0000, 7.1415 
+701.38 sec, 2101 / 10206 batches, 78 units, nspks: 1832.6794, mu: 8.0036, nst0: 1586, merges: 35.8317, 0.0000, 7.2382 
+715.90 sec, 2201 / 10206 batches, 85 units, nspks: 1957.3277, mu: 8.2834, nst0: 2027, merges: 35.2916, 0.0000, 7.0227 
+730.76 sec, 2301 / 10206 batches, 81 units, nspks: 2087.7369, mu: 8.3298, nst0: 2285, merges: 36.0811, 0.1128, 7.3085 
+740.71 sec, 2401 / 10206 batches, 78 units, nspks: 2169.9917, mu: 8.4582, nst0: 2808, merges: 36.1396, 0.0615, 6.9835 
+748.63 sec, 2501 / 10206 batches, 79 units, nspks: 2248.3381, mu: 9.3200, nst0: 2229, merges: 36.1773, 0.0948, 7.1537 
+756.42 sec, 2601 / 10206 batches, 89 units, nspks: 1981.6199, mu: 10.0000, nst0: 2148, merges: 36.2345, 0.2867, 7.3994 
+764.02 sec, 2701 / 10206 batches, 72 units, nspks: 1861.5814, mu: 8.7076, nst0: 1732, merges: 36.5327, 0.2679, 7.2196 
+770.93 sec, 2801 / 10206 batches, 72 units, nspks: 1786.6860, mu: 8.3886, nst0: 1745, merges: 37.1168, 0.0326, 7.4583 
+778.08 sec, 2901 / 10206 batches, 75 units, nspks: 1850.2377, mu: 8.6036, nst0: 1922, merges: 37.1916, 0.0040, 7.4412 
+785.31 sec, 3001 / 10206 batches, 74 units, nspks: 1821.2929, mu: 8.5097, nst0: 1845, merges: 37.9291, 0.0005, 7.6449 
+792.52 sec, 3101 / 10206 batches, 70 units, nspks: 1863.0749, mu: 8.2760, nst0: 1673, merges: 37.5835, 0.0001, 7.1588 
+800.46 sec, 3201 / 10206 batches, 68 units, nspks: 1906.7853, mu: 8.1707, nst0: 1843, merges: 36.7896, 0.0229, 7.1534 
+810.41 sec, 3301 / 10206 batches, 78 units, nspks: 1902.5819, mu: 8.2500, nst0: 1948, merges: 35.1970, 0.0028, 7.3790 
+820.72 sec, 3401 / 10206 batches, 71 units, nspks: 1939.9318, mu: 8.0446, nst0: 2427, merges: 35.7829, 0.0003, 7.1496 
+831.38 sec, 3501 / 10206 batches, 75 units, nspks: 2065.5176, mu: 8.1993, nst0: 1751, merges: 36.2050, 0.0000, 7.3974 
+841.98 sec, 3601 / 10206 batches, 78 units, nspks: 1980.9214, mu: 8.2236, nst0: 1759, merges: 35.7787, 0.0000, 7.1609 
+852.30 sec, 3701 / 10206 batches, 88 units, nspks: 1878.7332, mu: 8.7385, nst0: 1789, merges: 35.0220, 0.0000, 7.2066 
+862.65 sec, 3801 / 10206 batches, 95 units, nspks: 1798.0923, mu: 8.9261, nst0: 1872, merges: 36.0032, 0.0000, 7.2664 
+872.96 sec, 3901 / 10206 batches, 93 units, nspks: 1923.3712, mu: 8.4789, nst0: 1936, merges: 36.5163, 0.0000, 7.2293 
+883.42 sec, 4001 / 10206 batches, 86 units, nspks: 1955.7281, mu: 8.2313, nst0: 1782, merges: 37.5057, 0.0000, 7.2570 
+893.82 sec, 4101 / 10206 batches, 84 units, nspks: 2074.7473, mu: 8.0595, nst0: 1815, merges: 37.3123, 0.0000, 7.6291 
+904.33 sec, 4201 / 10206 batches, 87 units, nspks: 2110.9582, mu: 8.1384, nst0: 2314, merges: 36.4280, 0.0000, 7.5560 
+914.90 sec, 4301 / 10206 batches, 83 units, nspks: 2097.4956, mu: 7.9879, nst0: 1960, merges: 37.2128, 0.0000, 7.4154 
+925.46 sec, 4401 / 10206 batches, 87 units, nspks: 2227.2914, mu: 8.1392, nst0: 2330, merges: 35.2409, 0.0000, 7.0046 
+936.19 sec, 4501 / 10206 batches, 88 units, nspks: 2249.2557, mu: 8.0720, nst0: 2089, merges: 36.7883, 0.0000, 7.6663 
+947.04 sec, 4601 / 10206 batches, 96 units, nspks: 2214.6843, mu: 8.0635, nst0: 2033, merges: 34.2922, 0.0000, 7.0363 
+957.93 sec, 4701 / 10206 batches, 87 units, nspks: 2325.1613, mu: 8.0964, nst0: 2153, merges: 36.3436, 0.0000, 7.1426 
+968.51 sec, 4801 / 10206 batches, 88 units, nspks: 2258.6515, mu: 7.9179, nst0: 2291, merges: 35.6650, 0.0000, 7.2979 
+979.25 sec, 4901 / 10206 batches, 86 units, nspks: 2218.8156, mu: 7.9721, nst0: 2052, merges: 35.6067, 0.0000, 7.0589 
+989.93 sec, 5001 / 10206 batches, 88 units, nspks: 2258.6824, mu: 7.9267, nst0: 2706, merges: 35.1655, 0.0000, 6.8847 
+1000.58 sec, 5101 / 10206 batches, 89 units, nspks: 2296.6823, mu: 7.8773, nst0: 2428, merges: 35.4332, 0.0000, 7.4020 
+1011.13 sec, 5201 / 10206 batches, 86 units, nspks: 2233.7029, mu: 7.8225, nst0: 2023, merges: 35.3499, 0.0000, 7.2125 
+1016.47 sec, 5301 / 10206 batches, 84 units, nspks: 2212.8085, mu: 7.6895, nst0: 2338, merges: 34.6293, 0.0000, 6.8178 
+1027.21 sec, 5401 / 10206 batches, 88 units, nspks: 2241.9630, mu: 7.8723, nst0: 2141, merges: 34.8416, 0.0000, 7.0657 
+1037.75 sec, 5501 / 10206 batches, 93 units, nspks: 2205.6281, mu: 7.7926, nst0: 2212, merges: 34.7518, 0.0000, 7.1642 
+1048.01 sec, 5601 / 10206 batches, 93 units, nspks: 2158.9051, mu: 7.6938, nst0: 2028, merges: 35.8497, 0.0000, 7.5351 
+1058.14 sec, 5701 / 10206 batches, 93 units, nspks: 2184.8667, mu: 7.8182, nst0: 2077, merges: 35.1862, 0.0000, 7.2880 
+1068.30 sec, 5801 / 10206 batches, 91 units, nspks: 2180.2286, mu: 7.6997, nst0: 2092, merges: 35.1433, 0.0000, 6.8670 
+1078.55 sec, 5901 / 10206 batches, 90 units, nspks: 2140.9627, mu: 7.6315, nst0: 2278, merges: 35.9697, 0.0000, 7.4311 
+1088.95 sec, 6001 / 10206 batches, 93 units, nspks: 2121.6177, mu: 7.6823, nst0: 2377, merges: 35.0557, 0.0000, 7.2934 
+1099.42 sec, 6101 / 10206 batches, 92 units, nspks: 2226.5181, mu: 7.7349, nst0: 2071, merges: 36.0300, 0.0000, 6.9832 
+1109.69 sec, 6201 / 10206 batches, 93 units, nspks: 2253.4777, mu: 7.8138, nst0: 2140, merges: 36.1335, 0.0000, 7.2067 
+1120.13 sec, 6301 / 10206 batches, 92 units, nspks: 2266.2926, mu: 7.8620, nst0: 2674, merges: 36.1592, 0.0000, 7.2567 
+1130.25 sec, 6401 / 10206 batches, 94 units, nspks: 2267.1788, mu: 7.7887, nst0: 2175, merges: 34.5161, 0.0000, 6.9162 
+1142.61 sec, 6501 / 10206 batches, 94 units, nspks: 2327.2050, mu: 7.7293, nst0: 2525, merges: 35.2241, 0.0000, 6.9648 
+1156.90 sec, 6601 / 10206 batches, 98 units, nspks: 2247.5681, mu: 7.7169, nst0: 2211, merges: 36.0831, 0.0000, 7.0171 
+1170.69 sec, 6701 / 10206 batches, 97 units, nspks: 2219.7977, mu: 7.7636, nst0: 1959, merges: 34.5742, 0.0000, 6.6968 
+1184.40 sec, 6801 / 10206 batches, 105 units, nspks: 2320.0669, mu: 8.0238, nst0: 2233, merges: 34.8117, 0.0000, 7.1387 
+1198.32 sec, 6901 / 10206 batches, 102 units, nspks: 2409.6607, mu: 7.9610, nst0: 2290, merges: 34.8990, 0.1000, 7.1583 
+1212.31 sec, 7001 / 10206 batches, 97 units, nspks: 2337.9902, mu: 8.1514, nst0: 2181, merges: 35.7896, 0.0809, 7.0489 
+1226.18 sec, 7101 / 10206 batches, 106 units, nspks: 2481.6537, mu: 8.3304, nst0: 2874, merges: 35.1323, 0.0098, 7.2853 
+1239.89 sec, 7201 / 10206 batches, 92 units, nspks: 2318.0400, mu: 7.9827, nst0: 2227, merges: 35.7447, 0.0012, 7.0575 
+1253.77 sec, 7301 / 10206 batches, 96 units, nspks: 2278.1846, mu: 7.7625, nst0: 2276, merges: 35.6079, 0.0001, 7.1295 
+1264.59 sec, 7401 / 10206 batches, 98 units, nspks: 2180.5469, mu: 7.9522, nst0: 1953, merges: 36.2565, 0.0000, 7.0205 
+1273.25 sec, 7501 / 10206 batches, 94 units, nspks: 2188.0763, mu: 7.8061, nst0: 2228, merges: 36.1918, 0.0000, 7.3605 
+1286.98 sec, 7601 / 10206 batches, 93 units, nspks: 2231.5358, mu: 7.8959, nst0: 2130, merges: 35.7455, 0.0000, 6.8858 
+1300.93 sec, 7701 / 10206 batches, 94 units, nspks: 2247.4155, mu: 7.7960, nst0: 2414, merges: 36.2024, 0.0000, 7.1800 
+1315.21 sec, 7801 / 10206 batches, 101 units, nspks: 2293.3019, mu: 7.8053, nst0: 2192, merges: 34.4053, 0.0000, 7.1148 
+1329.35 sec, 7901 / 10206 batches, 96 units, nspks: 2289.9310, mu: 7.8534, nst0: 2227, merges: 35.4327, 0.0000, 7.1475 
+1343.40 sec, 8001 / 10206 batches, 92 units, nspks: 2202.5918, mu: 7.8349, nst0: 2066, merges: 36.2581, 0.0000, 7.4526 
+1357.38 sec, 8101 / 10206 batches, 93 units, nspks: 2331.5743, mu: 7.8203, nst0: 2294, merges: 36.9937, 0.0000, 7.9094 
+1371.62 sec, 8201 / 10206 batches, 92 units, nspks: 2278.2192, mu: 7.8566, nst0: 1992, merges: 36.1661, 0.0000, 7.1648 
+1385.69 sec, 8301 / 10206 batches, 95 units, nspks: 2383.5713, mu: 8.0157, nst0: 2428, merges: 35.9451, 0.0000, 7.2895 
+1400.24 sec, 8401 / 10206 batches, 102 units, nspks: 2673.5650, mu: 8.2440, nst0: 2664, merges: 35.6587, 0.0729, 7.1600 
+1414.28 sec, 8501 / 10206 batches, 98 units, nspks: 2362.2344, mu: 8.0101, nst0: 2175, merges: 35.2594, 0.0089, 6.7871 
+1428.42 sec, 8601 / 10206 batches, 94 units, nspks: 2299.4864, mu: 7.6816, nst0: 2228, merges: 36.6557, 0.0011, 7.2948 
+1442.44 sec, 8701 / 10206 batches, 91 units, nspks: 2297.3610, mu: 7.8726, nst0: 2429, merges: 36.4146, 0.0001, 6.8792 
+1456.54 sec, 8801 / 10206 batches, 94 units, nspks: 2206.7482, mu: 7.8672, nst0: 2218, merges: 34.7519, 0.0000, 6.6468 
+1470.67 sec, 8901 / 10206 batches, 93 units, nspks: 2351.1142, mu: 7.7611, nst0: 2350, merges: 34.9791, 0.0000, 6.8390 
+1484.72 sec, 9001 / 10206 batches, 97 units, nspks: 2323.0530, mu: 7.8397, nst0: 2236, merges: 36.2321, 0.0000, 7.6403 
+1498.82 sec, 9101 / 10206 batches, 95 units, nspks: 2409.4738, mu: 7.9691, nst0: 2217, merges: 36.0652, 0.0000, 6.9203 
+1512.84 sec, 9201 / 10206 batches, 97 units, nspks: 2161.2694, mu: 7.7142, nst0: 2463, merges: 35.8342, 0.0229, 7.1621 
+1526.85 sec, 9301 / 10206 batches, 95 units, nspks: 2208.5203, mu: 7.7583, nst0: 2480, merges: 35.2702, 0.0028, 6.8224 
+1540.98 sec, 9401 / 10206 batches, 96 units, nspks: 2376.2048, mu: 7.9460, nst0: 2224, merges: 35.7044, 0.0003, 7.0670 
+1553.70 sec, 9501 / 10206 batches, 101 units, nspks: 2344.1940, mu: 7.9300, nst0: 2356, merges: 34.9158, 0.0000, 6.9001 
+1566.34 sec, 9601 / 10206 batches, 95 units, nspks: 2288.3255, mu: 7.8854, nst0: 2293, merges: 35.8640, 0.0000, 7.1665 
+1579.38 sec, 9701 / 10206 batches, 96 units, nspks: 2386.1964, mu: 7.8079, nst0: 2212, merges: 36.5650, 0.0000, 7.1029 
+1592.54 sec, 9801 / 10206 batches, 96 units, nspks: 2261.7889, mu: 7.8123, nst0: 2312, merges: 36.0707, 0.0000, 7.4447 
+1605.86 sec, 9901 / 10206 batches, 93 units, nspks: 2380.1159, mu: 7.6897, nst0: 2443, merges: 36.4521, 0.0000, 6.9905 
+1619.38 sec, 10001 / 10206 batches, 99 units, nspks: 2372.4252, mu: 8.0125, nst0: 2057, merges: 36.4416, 0.0000, 7.0102 
+1632.75 sec, 10101 / 10206 batches, 97 units, nspks: 2393.4632, mu: 8.0790, nst0: 2589, merges: 36.8816, 0.0000, 6.8561 
+1645.85 sec, 10201 / 10206 batches, 95 units, nspks: 2251.5613, mu: 7.9821, nst0: 2275, merges: 36.9554, 0.0000, 7.5363 
+Elapsed time is 1646.466066 seconds.
+Finished learning templates 
+Time 1647s. Optimizing templates ...
+1646.74 sec, 1 / 10206 batches, 85 units, nspks: 2110.0000, mu: 7.7544, nst0: 4563 
+1662.29 sec, 101 / 10206 batches, 85 units, nspks: 225921.0000, mu: 7.7544, nst0: 5088 
+1678.06 sec, 201 / 10206 batches, 85 units, nspks: 446144.0000, mu: 7.7544, nst0: 4782 
+1694.19 sec, 301 / 10206 batches, 85 units, nspks: 649957.0000, mu: 7.7544, nst0: 4486 
+1710.70 sec, 401 / 10206 batches, 85 units, nspks: 856707.0000, mu: 7.7544, nst0: 4371 
+1727.05 sec, 501 / 10206 batches, 85 units, nspks: 1057208.0000, mu: 7.7544, nst0: 4308 
+1743.15 sec, 601 / 10206 batches, 85 units, nspks: 1246031.0000, mu: 7.7544, nst0: 4314 
+1759.28 sec, 701 / 10206 batches, 85 units, nspks: 1438107.0000, mu: 7.7544, nst0: 4418 
+1775.67 sec, 801 / 10206 batches, 85 units, nspks: 1631777.0000, mu: 7.7544, nst0: 4509 
+1792.03 sec, 901 / 10206 batches, 85 units, nspks: 1826373.0000, mu: 7.7544, nst0: 4234 
+1808.17 sec, 1001 / 10206 batches, 85 units, nspks: 2012337.0000, mu: 7.7544, nst0: 4087 
+1824.35 sec, 1101 / 10206 batches, 85 units, nspks: 2206770.0000, mu: 7.7544, nst0: 4340 
+1840.44 sec, 1201 / 10206 batches, 85 units, nspks: 2396451.0000, mu: 7.7544, nst0: 4491 
+1853.04 sec, 1301 / 10206 batches, 85 units, nspks: 2587143.0000, mu: 7.7544, nst0: 4260 
+1864.40 sec, 1401 / 10206 batches, 85 units, nspks: 2784105.0000, mu: 7.7544, nst0: 4551 
+1880.54 sec, 1501 / 10206 batches, 85 units, nspks: 2974402.0000, mu: 7.7544, nst0: 4252 
+1897.00 sec, 1601 / 10206 batches, 85 units, nspks: 3172551.0000, mu: 7.7544, nst0: 5058 
+1913.31 sec, 1701 / 10206 batches, 85 units, nspks: 3360005.0000, mu: 7.7544, nst0: 4376 
+1929.78 sec, 1801 / 10206 batches, 85 units, nspks: 3550780.0000, mu: 7.7544, nst0: 4106 
+1946.24 sec, 1901 / 10206 batches, 85 units, nspks: 3744246.0000, mu: 7.7544, nst0: 5353 
+1962.93 sec, 2001 / 10206 batches, 85 units, nspks: 3940074.0000, mu: 7.7544, nst0: 5185 
+1979.42 sec, 2101 / 10206 batches, 85 units, nspks: 4136744.0000, mu: 7.7544, nst0: 4099 
+1998.96 sec, 2201 / 10206 batches, 85 units, nspks: 4341514.0000, mu: 7.7544, nst0: 4879 
+2015.93 sec, 2301 / 10206 batches, 85 units, nspks: 4567932.0000, mu: 7.7544, nst0: 5102 
+2033.09 sec, 2401 / 10206 batches, 85 units, nspks: 4794943.0000, mu: 7.7544, nst0: 6185 
+2050.63 sec, 2501 / 10206 batches, 85 units, nspks: 5058647.0000, mu: 7.7544, nst0: 5112 
+2068.21 sec, 2601 / 10206 batches, 85 units, nspks: 5314068.0000, mu: 7.7544, nst0: 5626 
+2085.98 sec, 2701 / 10206 batches, 85 units, nspks: 5546322.0000, mu: 7.7544, nst0: 4738 
+2103.21 sec, 2801 / 10206 batches, 85 units, nspks: 5747896.0000, mu: 7.7544, nst0: 4412 
+2120.31 sec, 2901 / 10206 batches, 85 units, nspks: 5953500.0000, mu: 7.7544, nst0: 4927 
+2137.20 sec, 3001 / 10206 batches, 85 units, nspks: 6158619.0000, mu: 7.7544, nst0: 4660 
+2154.10 sec, 3101 / 10206 batches, 85 units, nspks: 6360728.0000, mu: 7.7544, nst0: 4436 
+2170.87 sec, 3201 / 10206 batches, 85 units, nspks: 6562598.0000, mu: 7.7544, nst0: 4751 
+2182.49 sec, 3301 / 10206 batches, 85 units, nspks: 6768380.0000, mu: 7.7544, nst0: 4820 
+2192.82 sec, 3401 / 10206 batches, 85 units, nspks: 6972131.0000, mu: 7.7544, nst0: 5459 
+2203.49 sec, 3501 / 10206 batches, 85 units, nspks: 7188883.0000, mu: 7.7544, nst0: 4555 
+2214.19 sec, 3601 / 10206 batches, 85 units, nspks: 7407723.0000, mu: 7.7544, nst0: 4338 
+2224.95 sec, 3701 / 10206 batches, 85 units, nspks: 7612763.0000, mu: 7.7544, nst0: 4363 
+2235.91 sec, 3801 / 10206 batches, 85 units, nspks: 7806954.0000, mu: 7.7544, nst0: 4541 
+2246.92 sec, 3901 / 10206 batches, 85 units, nspks: 8006654.0000, mu: 7.7544, nst0: 4628 
+2258.19 sec, 4001 / 10206 batches, 85 units, nspks: 8218296.0000, mu: 7.7544, nst0: 4475 
+2269.45 sec, 4101 / 10206 batches, 85 units, nspks: 8428001.0000, mu: 7.7544, nst0: 4465 
+2280.66 sec, 4201 / 10206 batches, 85 units, nspks: 8636807.0000, mu: 7.7544, nst0: 5070 
+2298.56 sec, 4301 / 10206 batches, 85 units, nspks: 8850269.0000, mu: 7.7544, nst0: 4557 
+2309.79 sec, 4401 / 10206 batches, 85 units, nspks: 9064940.0000, mu: 7.7544, nst0: 5050 
+2321.25 sec, 4501 / 10206 batches, 85 units, nspks: 9287721.0000, mu: 7.7544, nst0: 4605 
+2333.01 sec, 4601 / 10206 batches, 85 units, nspks: 9508490.0000, mu: 7.7544, nst0: 4491 
+2344.92 sec, 4701 / 10206 batches, 85 units, nspks: 9734376.0000, mu: 7.7544, nst0: 4793 
+2356.46 sec, 4801 / 10206 batches, 85 units, nspks: 9950897.0000, mu: 7.7544, nst0: 4838 
+2367.53 sec, 4901 / 10206 batches, 85 units, nspks: 10164035.0000, mu: 7.7544, nst0: 4595 
+2378.48 sec, 5001 / 10206 batches, 85 units, nspks: 10377667.0000, mu: 7.7544, nst0: 5577 
+2389.11 sec, 5101 / 10206 batches, 85 units, nspks: 10595883.0000, mu: 7.7544, nst0: 5071 
+2399.45 sec, 5201 / 10206 batches, 85 units, nspks: 10803571.0000, mu: 7.7544, nst0: 4457 
+2409.92 sec, 5301 / 10206 batches, 85 units, nspks: 11014079.0000, mu: 7.7544, nst0: 5050 
+2421.03 sec, 5401 / 10206 batches, 85 units, nspks: 11229712.0000, mu: 7.7544, nst0: 4687 
+2435.65 sec, 5501 / 10206 batches, 85 units, nspks: 11437410.0000, mu: 7.7544, nst0: 4870 
+2449.17 sec, 5601 / 10206 batches, 85 units, nspks: 11641474.0000, mu: 7.7544, nst0: 4591 
+2462.50 sec, 5701 / 10206 batches, 85 units, nspks: 11847539.0000, mu: 7.7544, nst0: 4478 
+2475.78 sec, 5801 / 10206 batches, 85 units, nspks: 12052660.0000, mu: 7.7544, nst0: 4427 
+2489.17 sec, 5901 / 10206 batches, 85 units, nspks: 12258882.0000, mu: 7.7544, nst0: 4804 
+2502.49 sec, 6001 / 10206 batches, 85 units, nspks: 12461639.0000, mu: 7.7544, nst0: 5060 
+2515.87 sec, 6101 / 10206 batches, 85 units, nspks: 12668103.0000, mu: 7.7544, nst0: 4466 
+2529.03 sec, 6201 / 10206 batches, 85 units, nspks: 12877562.0000, mu: 7.7544, nst0: 4661 
+2542.07 sec, 6301 / 10206 batches, 85 units, nspks: 13086269.0000, mu: 7.7544, nst0: 5340 
+2555.22 sec, 6401 / 10206 batches, 85 units, nspks: 13297676.0000, mu: 7.7544, nst0: 4712 
+2568.65 sec, 6501 / 10206 batches, 85 units, nspks: 13517453.0000, mu: 7.7544, nst0: 5109 
+2582.03 sec, 6601 / 10206 batches, 85 units, nspks: 13724343.0000, mu: 7.7544, nst0: 4653 
+2595.52 sec, 6701 / 10206 batches, 85 units, nspks: 13936748.0000, mu: 7.7544, nst0: 4277 
+2609.02 sec, 6801 / 10206 batches, 85 units, nspks: 14150895.0000, mu: 7.7544, nst0: 5174 
+2623.76 sec, 6901 / 10206 batches, 85 units, nspks: 14403864.0000, mu: 7.7544, nst0: 5082 
+2637.97 sec, 7001 / 10206 batches, 85 units, nspks: 14641375.0000, mu: 7.7544, nst0: 4879 
+2652.19 sec, 7101 / 10206 batches, 85 units, nspks: 14880054.0000, mu: 7.7544, nst0: 6954 
+2666.22 sec, 7201 / 10206 batches, 85 units, nspks: 15110828.0000, mu: 7.7544, nst0: 4781 
+2679.70 sec, 7301 / 10206 batches, 85 units, nspks: 15334092.0000, mu: 7.7544, nst0: 4769 
+2693.62 sec, 7401 / 10206 batches, 85 units, nspks: 15558065.0000, mu: 7.7544, nst0: 4347 
+2707.11 sec, 7501 / 10206 batches, 85 units, nspks: 15763859.0000, mu: 7.7544, nst0: 4760 
+2720.67 sec, 7601 / 10206 batches, 85 units, nspks: 15973733.0000, mu: 7.7544, nst0: 4687 
+2734.28 sec, 7701 / 10206 batches, 85 units, nspks: 16182785.0000, mu: 7.7544, nst0: 5029 
+2749.64 sec, 7801 / 10206 batches, 85 units, nspks: 16442858.0000, mu: 7.7544, nst0: 4687 
+2763.53 sec, 7901 / 10206 batches, 85 units, nspks: 16666121.0000, mu: 7.7544, nst0: 4698 
+2776.13 sec, 8001 / 10206 batches, 85 units, nspks: 16880584.0000, mu: 7.7544, nst0: 4431 
+2790.04 sec, 8101 / 10206 batches, 85 units, nspks: 17106902.0000, mu: 7.7544, nst0: 4832 
+2804.63 sec, 8201 / 10206 batches, 85 units, nspks: 17337879.0000, mu: 7.7544, nst0: 4371 
+2818.96 sec, 8301 / 10206 batches, 85 units, nspks: 17555053.0000, mu: 7.7544, nst0: 5023 
+2846.81 sec, 8401 / 10206 batches, 85 units, nspks: 17805746.0000, mu: 7.7544, nst0: 5377 
+2862.53 sec, 8501 / 10206 batches, 85 units, nspks: 18042340.0000, mu: 7.7544, nst0: 4721 
+2878.33 sec, 8601 / 10206 batches, 85 units, nspks: 18266875.0000, mu: 7.7544, nst0: 4771 
+2894.44 sec, 8701 / 10206 batches, 85 units, nspks: 18492549.0000, mu: 7.7544, nst0: 5094 
+2910.34 sec, 8801 / 10206 batches, 85 units, nspks: 18709145.0000, mu: 7.7544, nst0: 4840 
+2926.48 sec, 8901 / 10206 batches, 85 units, nspks: 18934388.0000, mu: 7.7544, nst0: 4932 
+2942.75 sec, 9001 / 10206 batches, 85 units, nspks: 19168096.0000, mu: 7.7544, nst0: 4840 
+2959.47 sec, 9101 / 10206 batches, 85 units, nspks: 19401500.0000, mu: 7.7544, nst0: 4774 
+2976.08 sec, 9201 / 10206 batches, 85 units, nspks: 19629354.0000, mu: 7.7544, nst0: 5253 
+2992.73 sec, 9301 / 10206 batches, 85 units, nspks: 19851156.0000, mu: 7.7544, nst0: 5262 
+3009.70 sec, 9401 / 10206 batches, 85 units, nspks: 20079706.0000, mu: 7.7544, nst0: 4851 
+3026.56 sec, 9501 / 10206 batches, 85 units, nspks: 20305563.0000, mu: 7.7544, nst0: 4905 
+3043.02 sec, 9601 / 10206 batches, 85 units, nspks: 20527054.0000, mu: 7.7544, nst0: 4968 
+3059.59 sec, 9701 / 10206 batches, 85 units, nspks: 20758059.0000, mu: 7.7544, nst0: 4977 
+3076.53 sec, 9801 / 10206 batches, 85 units, nspks: 20986884.0000, mu: 7.7544, nst0: 4997 
+3093.62 sec, 9901 / 10206 batches, 85 units, nspks: 21220323.0000, mu: 7.7544, nst0: 5185 
+3110.82 sec, 10001 / 10206 batches, 85 units, nspks: 21469498.0000, mu: 7.7544, nst0: 4588 
+3127.79 sec, 10101 / 10206 batches, 85 units, nspks: 21712306.0000, mu: 7.7544, nst0: 5467 
+3144.72 sec, 10201 / 10206 batches, 85 units, nspks: 21953308.0000, mu: 7.7544, nst0: 5013 
+Elapsed time is 3145.531142 seconds.
+Number of spikes before applying cutoff: 48997138
+initialized spike counts
+Found 0 splits, checked 1/85 clusters, nccg 1 
+Finished splitting. Found 13 splits, checked 98/98 clusters, nccg 30 
+found 7 good units 
+Saving results to Phy  
+Saving final results in rez2  
+Looking for data inside /home/kgg/Desktop/kilosort_data/Pancho/230126/RSn2_batch3 
+Time   0s. Computing whitening matrix.. 
+Getting channel whitening matrix... 
+Channel-whitening matrix computed. 
+Time  12s. Loading raw data and applying filters... 
+Time 395s. Finished preprocessing 10206 batches. 
+Final ops:
+                trange: [0 Inf]
+              NchanTOT: 64
+                    fs: 2.4414e+04
+                fshigh: 300
+    minfr_goodchannels: 0
+                    Th: [6 4]
+                   lam: 10
+              AUCsplit: 0.9000
+                 minFR: 0.0200
+              momentum: [20 400]
+             sigmaMask: 30
+                 ThPre: 8
+                 spkTh: -6
+               reorder: 1
+                 nskip: 25
+                   GPU: 1
+          nfilt_factor: 5
+                ntbuff: 64
+                    NT: 32832
+        whiteningRange: 32
+              nSkipCov: 25
+             scaleproc: 200
+                  nPCs: 3
+                useRAM: 0
+                 fproc: '/home/kgg/Desktop/kilosort_data/Pancho/230126/RSn2_batch3/temp_wh.dat'
+               chanMap: [64x1 double]
+                   sig: 20
+               nblocks: 0
+               fbinary: '/home/kgg/Desktop/kilosort_data/Pancho/230126/RSn2_batch3/RSn2_batch3.bin'
+                   nt0: 61
+                nt0min: 20
+                tstart: 0
+                  tend: 335058011
+           sampsToRead: 335058011
+                 twind: 0
+                Nbatch: 10206
+                 igood: [64x1 logical]
+                 Nchan: 64
+                 Nfilt: 320
+               kcoords: [64x1 double]
+                NTbuff: 33024
+
+Time 400s. Optimizing templates ...
+400.18 sec, 1 / 10206 batches, 12 units, nspks: 1.3147, mu: 15.7894, nst0: 20, merges: 0.0000, 0.0000, 0.6000 
+416.78 sec, 101 / 10206 batches, 99 units, nspks: 2010.7839, mu: 10.0000, nst0: 2232, merges: 31.3915, 0.2010, 7.7761 
+433.52 sec, 201 / 10206 batches, 127 units, nspks: 2432.3765, mu: 9.6959, nst0: 2461, merges: 35.8683, 0.0411, 7.4708 
+447.63 sec, 301 / 10206 batches, 144 units, nspks: 2682.4569, mu: 9.5728, nst0: 2668, merges: 35.9199, 0.0050, 7.5467 
+465.31 sec, 401 / 10206 batches, 155 units, nspks: 2627.2373, mu: 8.6040, nst0: 2368, merges: 37.1522, 0.0006, 7.6812 
+482.73 sec, 501 / 10206 batches, 189 units, nspks: 2821.2137, mu: 8.9369, nst0: 2509, merges: 34.1976, 0.4878, 7.1341 
+499.79 sec, 601 / 10206 batches, 182 units, nspks: 2918.7410, mu: 8.5550, nst0: 2679, merges: 35.2513, 0.3051, 7.0557 
+516.93 sec, 701 / 10206 batches, 193 units, nspks: 2965.2014, mu: 8.6336, nst0: 2637, merges: 34.6418, 1.1790, 7.3167 
+535.35 sec, 801 / 10206 batches, 204 units, nspks: 3054.4842, mu: 8.6848, nst0: 3392, merges: 34.4385, 1.4244, 7.0494 
+554.48 sec, 901 / 10206 batches, 224 units, nspks: 3087.1821, mu: 8.7100, nst0: 2990, merges: 33.5607, 1.1782, 6.9344 
+573.56 sec, 1001 / 10206 batches, 209 units, nspks: 3210.4259, mu: 8.3401, nst0: 3143, merges: 36.8948, 0.1944, 7.2366 
+593.09 sec, 1101 / 10206 batches, 203 units, nspks: 3167.1536, mu: 8.1042, nst0: 3066, merges: 36.6262, 0.0585, 7.1014 
+612.62 sec, 1201 / 10206 batches, 206 units, nspks: 3151.6843, mu: 8.1683, nst0: 3070, merges: 37.1539, 0.0502, 7.7295 
+632.34 sec, 1301 / 10206 batches, 205 units, nspks: 3251.7569, mu: 8.1606, nst0: 3060, merges: 37.3705, 0.1022, 7.3303 
+652.43 sec, 1401 / 10206 batches, 215 units, nspks: 3433.5182, mu: 8.1456, nst0: 3372, merges: 35.7096, 0.0727, 7.3364 
+672.97 sec, 1501 / 10206 batches, 214 units, nspks: 3482.1676, mu: 8.2254, nst0: 3537, merges: 36.8760, 0.0476, 7.2436 
+693.22 sec, 1601 / 10206 batches, 218 units, nspks: 3354.3934, mu: 8.0438, nst0: 4050, merges: 36.1480, 0.0724, 7.2218 
+713.87 sec, 1701 / 10206 batches, 230 units, nspks: 3537.9693, mu: 8.2339, nst0: 3339, merges: 34.4716, 0.3068, 7.2267 
+734.94 sec, 1801 / 10206 batches, 257 units, nspks: 3209.7891, mu: 8.2339, nst0: 2841, merges: 34.2639, 0.3783, 7.1985 
+756.32 sec, 1901 / 10206 batches, 234 units, nspks: 3513.8697, mu: 8.0979, nst0: 4238, merges: 36.3719, 0.2050, 7.3020 
+777.65 sec, 2001 / 10206 batches, 232 units, nspks: 3472.8050, mu: 8.0350, nst0: 4109, merges: 36.2374, 0.0847, 7.2321 
+799.10 sec, 2101 / 10206 batches, 233 units, nspks: 3488.0903, mu: 8.0312, nst0: 3261, merges: 36.6151, 0.0385, 7.4875 
+820.23 sec, 2201 / 10206 batches, 233 units, nspks: 3527.5566, mu: 7.9930, nst0: 3617, merges: 36.8757, 0.0047, 7.1336 
+840.62 sec, 2301 / 10206 batches, 229 units, nspks: 3517.2852, mu: 7.9502, nst0: 3833, merges: 36.3422, 0.2077, 7.5917 
+861.04 sec, 2401 / 10206 batches, 234 units, nspks: 3598.4962, mu: 7.9673, nst0: 4209, merges: 36.3775, 0.2021, 7.3903 
+881.81 sec, 2501 / 10206 batches, 242 units, nspks: 3501.5894, mu: 8.1067, nst0: 3027, merges: 34.2814, 0.2085, 6.9683 
+902.67 sec, 2601 / 10206 batches, 250 units, nspks: 3560.1908, mu: 7.9635, nst0: 4195, merges: 35.9669, 0.1685, 7.7627 
+923.84 sec, 2701 / 10206 batches, 248 units, nspks: 3530.1529, mu: 8.0303, nst0: 3980, merges: 34.7890, 0.2132, 6.9526 
+945.02 sec, 2801 / 10206 batches, 244 units, nspks: 3568.8108, mu: 8.0065, nst0: 3478, merges: 35.6177, 0.0647, 7.1564 
+966.06 sec, 2901 / 10206 batches, 263 units, nspks: 3577.7989, mu: 8.0927, nst0: 3518, merges: 35.6381, 0.0676, 7.4956 
+987.11 sec, 3001 / 10206 batches, 265 units, nspks: 3457.8173, mu: 8.0419, nst0: 3443, merges: 34.9491, 0.1483, 7.1104 
+1008.12 sec, 3101 / 10206 batches, 258 units, nspks: 3467.3397, mu: 7.9742, nst0: 3293, merges: 37.0906, 0.0409, 7.2798 
+1029.06 sec, 3201 / 10206 batches, 254 units, nspks: 3559.7631, mu: 8.0314, nst0: 3434, merges: 35.5504, 0.0615, 6.9855 
+1050.03 sec, 3301 / 10206 batches, 266 units, nspks: 3660.1261, mu: 8.1735, nst0: 3743, merges: 36.6966, 0.0524, 7.7316 
+1070.21 sec, 3401 / 10206 batches, 242 units, nspks: 3521.9269, mu: 7.9509, nst0: 4087, merges: 37.7030, 0.0595, 7.6910 
+1090.00 sec, 3501 / 10206 batches, 244 units, nspks: 3384.5288, mu: 7.8605, nst0: 3175, merges: 37.2342, 0.0072, 7.2853 
+1109.92 sec, 3601 / 10206 batches, 243 units, nspks: 3368.8868, mu: 7.7326, nst0: 2825, merges: 37.5823, 0.0144, 7.4685 
+1131.75 sec, 3701 / 10206 batches, 260 units, nspks: 2913.3715, mu: 7.9969, nst0: 2867, merges: 34.9480, 0.1413, 6.9755 
+1155.78 sec, 3801 / 10206 batches, 285 units, nspks: 3290.3375, mu: 8.4346, nst0: 3202, merges: 35.7092, 0.1269, 7.3611 
+1180.10 sec, 3901 / 10206 batches, 297 units, nspks: 3636.9780, mu: 8.1635, nst0: 2977, merges: 31.3757, 0.2233, 7.4659 
+1204.71 sec, 4001 / 10206 batches, 287 units, nspks: 3424.3201, mu: 8.0947, nst0: 3603, merges: 35.3993, 0.1867, 7.4239 
+1224.79 sec, 4101 / 10206 batches, 262 units, nspks: 3613.9751, mu: 8.0241, nst0: 3506, merges: 37.6696, 0.1389, 7.0784 
+1248.95 sec, 4201 / 10206 batches, 263 units, nspks: 3550.5613, mu: 7.9993, nst0: 3666, merges: 37.9362, 0.0647, 8.0648 
+1273.64 sec, 4301 / 10206 batches, 260 units, nspks: 3433.2736, mu: 7.8157, nst0: 3157, merges: 37.2836, 0.0435, 7.1610 
+1298.38 sec, 4401 / 10206 batches, 260 units, nspks: 3544.4370, mu: 7.8494, nst0: 3550, merges: 36.6288, 0.1103, 7.0713 
+1322.77 sec, 4501 / 10206 batches, 258 units, nspks: 3528.3190, mu: 7.8068, nst0: 3364, merges: 36.1959, 0.0134, 7.0221 
+1347.03 sec, 4601 / 10206 batches, 256 units, nspks: 3507.9050, mu: 7.8947, nst0: 3376, merges: 36.3654, 0.0826, 7.3609 
+1371.95 sec, 4701 / 10206 batches, 253 units, nspks: 3794.2589, mu: 8.1133, nst0: 3540, merges: 36.7822, 0.0757, 7.2487 
+1396.75 sec, 4801 / 10206 batches, 248 units, nspks: 3730.1869, mu: 8.0575, nst0: 3619, merges: 37.9875, 0.0092, 7.2746 
+1421.50 sec, 4901 / 10206 batches, 253 units, nspks: 3641.9912, mu: 8.0966, nst0: 3385, merges: 36.6050, 0.1031, 7.5593 
+1445.75 sec, 5001 / 10206 batches, 255 units, nspks: 3477.4189, mu: 7.9725, nst0: 4122, merges: 36.0736, 0.0125, 7.3169 
+1469.76 sec, 5101 / 10206 batches, 250 units, nspks: 3549.5310, mu: 7.8631, nst0: 3952, merges: 35.4584, 0.1531, 6.6908 
+1491.86 sec, 5201 / 10206 batches, 247 units, nspks: 3600.5523, mu: 7.8946, nst0: 3290, merges: 36.9440, 0.0186, 7.4137 
+1516.19 sec, 5301 / 10206 batches, 259 units, nspks: 3453.4571, mu: 7.8127, nst0: 3749, merges: 36.2612, 0.0023, 7.2880 
+1540.41 sec, 5401 / 10206 batches, 251 units, nspks: 3544.1442, mu: 7.7729, nst0: 3249, merges: 37.3486, 0.0003, 7.2854 
+1563.97 sec, 5501 / 10206 batches, 255 units, nspks: 3427.1672, mu: 7.7221, nst0: 3409, merges: 36.6692, 0.0000, 7.3140 
+1587.72 sec, 5601 / 10206 batches, 253 units, nspks: 3403.2050, mu: 7.7843, nst0: 2927, merges: 35.9679, 0.0000, 6.8316 
+1611.44 sec, 5701 / 10206 batches, 251 units, nspks: 3341.1352, mu: 7.7114, nst0: 3219, merges: 35.9893, 0.0729, 7.0195 
+1635.92 sec, 5801 / 10206 batches, 263 units, nspks: 3558.8789, mu: 7.7902, nst0: 3270, merges: 36.5352, 0.1089, 7.4941 
+1660.46 sec, 5901 / 10206 batches, 263 units, nspks: 3543.2276, mu: 7.8717, nst0: 3584, merges: 35.9929, 0.0132, 6.9689 
+1684.71 sec, 6001 / 10206 batches, 263 units, nspks: 3606.7026, mu: 7.9104, nst0: 4250, merges: 36.7784, 0.0895, 7.2693 
+1709.48 sec, 6101 / 10206 batches, 260 units, nspks: 3586.5624, mu: 7.9720, nst0: 3113, merges: 36.6524, 0.0109, 7.3956 
+1734.45 sec, 6201 / 10206 batches, 259 units, nspks: 3865.3691, mu: 8.0421, nst0: 3564, merges: 36.6868, 0.0013, 7.2106 
+1759.27 sec, 6301 / 10206 batches, 259 units, nspks: 3712.5505, mu: 8.0174, nst0: 4671, merges: 35.7230, 0.0002, 6.8905 
+1784.00 sec, 6401 / 10206 batches, 261 units, nspks: 3600.1208, mu: 7.9611, nst0: 3272, merges: 36.1219, 0.0135, 7.4309 
+1808.63 sec, 6501 / 10206 batches, 259 units, nspks: 3719.3250, mu: 7.8708, nst0: 4027, merges: 36.3979, 0.0016, 7.2894 
+1832.86 sec, 6601 / 10206 batches, 263 units, nspks: 3509.4443, mu: 7.8848, nst0: 3327, merges: 35.5748, 0.1262, 6.9202 
+1857.71 sec, 6701 / 10206 batches, 264 units, nspks: 3660.3211, mu: 7.8973, nst0: 3370, merges: 36.1751, 0.0153, 7.5124 
+1877.33 sec, 6801 / 10206 batches, 272 units, nspks: 3633.2945, mu: 7.8947, nst0: 3554, merges: 35.7444, 0.0019, 7.2936 
+1901.58 sec, 6901 / 10206 batches, 266 units, nspks: 3791.2943, mu: 7.9931, nst0: 3613, merges: 36.6470, 0.0002, 7.3516 
+1925.70 sec, 7001 / 10206 batches, 263 units, nspks: 3768.5122, mu: 7.9266, nst0: 3682, merges: 36.6371, 0.0000, 7.3662 
+1950.23 sec, 7101 / 10206 batches, 265 units, nspks: 3721.6078, mu: 7.9905, nst0: 3756, merges: 36.8579, 0.0000, 7.4716 
+1974.70 sec, 7201 / 10206 batches, 264 units, nspks: 3722.4927, mu: 7.9222, nst0: 3565, merges: 36.3852, 0.1000, 7.2601 
+1999.58 sec, 7301 / 10206 batches, 266 units, nspks: 3775.0946, mu: 7.9918, nst0: 3524, merges: 36.7815, 0.0932, 7.7652 
+2024.03 sec, 7401 / 10206 batches, 265 units, nspks: 3687.5748, mu: 8.0385, nst0: 3226, merges: 36.6722, 0.0113, 7.2834 
+2047.82 sec, 7501 / 10206 batches, 263 units, nspks: 3765.7904, mu: 8.0727, nst0: 3752, merges: 36.2560, 0.0833, 7.3029 
+2071.63 sec, 7601 / 10206 batches, 263 units, nspks: 3726.2374, mu: 7.9767, nst0: 3729, merges: 36.5543, 0.0633, 7.3655 
+2095.41 sec, 7701 / 10206 batches, 264 units, nspks: 3691.3976, mu: 8.0449, nst0: 3938, merges: 36.4390, 0.0077, 7.3451 
+2118.43 sec, 7801 / 10206 batches, 263 units, nspks: 3632.8974, mu: 7.9299, nst0: 3763, merges: 37.2901, 0.0323, 7.5606 
+2136.17 sec, 7901 / 10206 batches, 266 units, nspks: 3586.2348, mu: 7.9161, nst0: 3477, merges: 36.8299, 0.0039, 7.8264 
+2154.11 sec, 8001 / 10206 batches, 265 units, nspks: 3579.2078, mu: 7.9318, nst0: 3391, merges: 36.5220, 0.0005, 7.1829 
+2172.67 sec, 8101 / 10206 batches, 271 units, nspks: 3601.9023, mu: 7.9445, nst0: 3754, merges: 36.5184, 0.0001, 7.6780 
+2191.28 sec, 8201 / 10206 batches, 258 units, nspks: 3715.8027, mu: 7.8580, nst0: 3486, merges: 36.0631, 0.0000, 6.9962 
+2210.03 sec, 8301 / 10206 batches, 261 units, nspks: 3692.2302, mu: 7.8295, nst0: 3725, merges: 35.6808, 0.0000, 7.1845 
+2228.69 sec, 8401 / 10206 batches, 272 units, nspks: 3684.3012, mu: 7.9249, nst0: 3489, merges: 35.8413, 0.0000, 7.2322 
+2247.50 sec, 8501 / 10206 batches, 271 units, nspks: 3568.6280, mu: 7.8805, nst0: 3316, merges: 36.3324, 0.0135, 7.3665 
+2266.24 sec, 8601 / 10206 batches, 267 units, nspks: 3754.7426, mu: 7.9083, nst0: 3584, merges: 36.6096, 0.0495, 7.0468 
+2285.36 sec, 8701 / 10206 batches, 278 units, nspks: 3803.0969, mu: 7.9599, nst0: 3951, merges: 36.5933, 0.0060, 7.4861 
+2304.36 sec, 8801 / 10206 batches, 272 units, nspks: 3732.5868, mu: 7.9881, nst0: 3541, merges: 36.9737, 0.0438, 7.3796 
+2323.53 sec, 8901 / 10206 batches, 272 units, nspks: 4008.7247, mu: 8.0073, nst0: 3801, merges: 37.4978, 0.0402, 7.7528 
+2336.41 sec, 9001 / 10206 batches, 274 units, nspks: 3997.1635, mu: 8.0975, nst0: 3781, merges: 37.9553, 0.0234, 7.5924 
+2344.38 sec, 9101 / 10206 batches, 275 units, nspks: 3850.0178, mu: 8.0524, nst0: 3633, merges: 36.4733, 0.0928, 7.2550 
+2352.33 sec, 9201 / 10206 batches, 280 units, nspks: 3671.7639, mu: 8.1779, nst0: 4087, merges: 36.2332, 0.0462, 7.1772 
+2360.16 sec, 9301 / 10206 batches, 277 units, nspks: 3717.6115, mu: 8.0541, nst0: 3895, merges: 37.4262, 0.0960, 7.5350 
+2367.97 sec, 9401 / 10206 batches, 281 units, nspks: 3773.7899, mu: 8.0694, nst0: 3615, merges: 36.2653, 0.0267, 7.4096 
+2375.90 sec, 9501 / 10206 batches, 276 units, nspks: 3837.2083, mu: 8.0392, nst0: 3591, merges: 36.4769, 0.0032, 7.2477 
+2383.97 sec, 9601 / 10206 batches, 272 units, nspks: 3955.8554, mu: 8.0314, nst0: 3690, merges: 36.7637, 0.1241, 7.5025 
+2391.39 sec, 9701 / 10206 batches, 266 units, nspks: 3558.4784, mu: 7.9024, nst0: 3204, merges: 36.2634, 0.0540, 7.1886 
+2398.77 sec, 9801 / 10206 batches, 267 units, nspks: 3576.8322, mu: 7.8760, nst0: 4218, merges: 36.6474, 0.1279, 7.6016 
+2406.27 sec, 9901 / 10206 batches, 265 units, nspks: 3637.3687, mu: 7.9299, nst0: 3604, merges: 36.2944, 0.0156, 7.1139 
+2415.30 sec, 10001 / 10206 batches, 262 units, nspks: 3529.1983, mu: 7.8075, nst0: 3153, merges: 36.7371, 0.1029, 7.5551 
+2426.84 sec, 10101 / 10206 batches, 263 units, nspks: 3596.0266, mu: 7.8329, nst0: 4065, merges: 36.1508, 0.0125, 7.2142 
+2437.86 sec, 10201 / 10206 batches, 267 units, nspks: 3530.5376, mu: 7.8396, nst0: 3462, merges: 36.8729, 0.0015, 7.7597 
+Elapsed time is 2438.387634 seconds.
+Finished learning templates 
+Time 2439s. Optimizing templates ...
+2438.88 sec, 1 / 10206 batches, 259 units, nspks: 3465.0000, mu: 7.7571, nst0: 6535 
+2455.98 sec, 101 / 10206 batches, 259 units, nspks: 386700.0000, mu: 7.7571, nst0: 7078 
+2473.10 sec, 201 / 10206 batches, 259 units, nspks: 766787.0000, mu: 7.7571, nst0: 7126 
+2490.09 sec, 301 / 10206 batches, 259 units, nspks: 1142820.0000, mu: 7.7571, nst0: 7218 
+2506.58 sec, 401 / 10206 batches, 259 units, nspks: 1510374.0000, mu: 7.7571, nst0: 6146 
+2523.07 sec, 501 / 10206 batches, 259 units, nspks: 1877831.0000, mu: 7.7571, nst0: 6353 
+2539.54 sec, 601 / 10206 batches, 259 units, nspks: 2243058.0000, mu: 7.7571, nst0: 6566 
+2556.12 sec, 701 / 10206 batches, 259 units, nspks: 2615236.0000, mu: 7.7571, nst0: 6404 
+2573.06 sec, 801 / 10206 batches, 259 units, nspks: 2992709.0000, mu: 7.7571, nst0: 7670 
+2590.08 sec, 901 / 10206 batches, 259 units, nspks: 3375417.0000, mu: 7.7571, nst0: 6823 
+2607.38 sec, 1001 / 10206 batches, 259 units, nspks: 3758053.0000, mu: 7.7571, nst0: 6956 
+2624.50 sec, 1101 / 10206 batches, 259 units, nspks: 4135737.0000, mu: 7.7571, nst0: 6823 
+2641.43 sec, 1201 / 10206 batches, 259 units, nspks: 4507945.0000, mu: 7.7571, nst0: 6803 
+2658.39 sec, 1301 / 10206 batches, 259 units, nspks: 4884990.0000, mu: 7.7571, nst0: 6532 
+2675.69 sec, 1401 / 10206 batches, 259 units, nspks: 5269953.0000, mu: 7.7571, nst0: 7007 
+2696.49 sec, 1501 / 10206 batches, 259 units, nspks: 5671617.0000, mu: 7.7571, nst0: 7362 
+2713.68 sec, 1601 / 10206 batches, 259 units, nspks: 6057347.0000, mu: 7.7571, nst0: 8287 
+2730.83 sec, 1701 / 10206 batches, 259 units, nspks: 6445826.0000, mu: 7.7571, nst0: 6918 
+2747.71 sec, 1801 / 10206 batches, 259 units, nspks: 6823998.0000, mu: 7.7571, nst0: 6053 
+2764.92 sec, 1901 / 10206 batches, 259 units, nspks: 7211738.0000, mu: 7.7571, nst0: 8428 
+2780.27 sec, 2001 / 10206 batches, 259 units, nspks: 7595567.0000, mu: 7.7571, nst0: 8149 
+2796.56 sec, 2101 / 10206 batches, 259 units, nspks: 7983409.0000, mu: 7.7571, nst0: 6644 
+2813.21 sec, 2201 / 10206 batches, 259 units, nspks: 8379238.0000, mu: 7.7571, nst0: 7236 
+2825.40 sec, 2301 / 10206 batches, 259 units, nspks: 8763582.0000, mu: 7.7571, nst0: 7615 
+2837.58 sec, 2401 / 10206 batches, 259 units, nspks: 9148179.0000, mu: 7.7571, nst0: 8111 
+2849.53 sec, 2501 / 10206 batches, 259 units, nspks: 9532613.0000, mu: 7.7571, nst0: 6266 
+2866.34 sec, 2601 / 10206 batches, 259 units, nspks: 9908478.0000, mu: 7.7571, nst0: 8338 
+2883.72 sec, 2701 / 10206 batches, 259 units, nspks: 10294317.0000, mu: 7.7571, nst0: 7748 
+2901.56 sec, 2801 / 10206 batches, 259 units, nspks: 10682937.0000, mu: 7.7571, nst0: 6823 
+2925.23 sec, 2901 / 10206 batches, 259 units, nspks: 11061680.0000, mu: 7.7571, nst0: 6970 
+2942.72 sec, 3001 / 10206 batches, 259 units, nspks: 11438572.0000, mu: 7.7571, nst0: 6969 
+2960.21 sec, 3101 / 10206 batches, 259 units, nspks: 11811733.0000, mu: 7.7571, nst0: 6720 
+2978.03 sec, 3201 / 10206 batches, 259 units, nspks: 12185252.0000, mu: 7.7571, nst0: 6728 
+2993.22 sec, 3301 / 10206 batches, 259 units, nspks: 12570527.0000, mu: 7.7571, nst0: 7417 
+3005.12 sec, 3401 / 10206 batches, 259 units, nspks: 12950737.0000, mu: 7.7571, nst0: 8012 
+3016.70 sec, 3501 / 10206 batches, 259 units, nspks: 13313964.0000, mu: 7.7571, nst0: 6360 
+3028.27 sec, 3601 / 10206 batches, 259 units, nspks: 13675634.0000, mu: 7.7571, nst0: 5860 
+3039.39 sec, 3701 / 10206 batches, 259 units, nspks: 14017323.0000, mu: 7.7571, nst0: 6031 
+3050.62 sec, 3801 / 10206 batches, 259 units, nspks: 14354840.0000, mu: 7.7571, nst0: 6606 
+3062.49 sec, 3901 / 10206 batches, 259 units, nspks: 14728049.0000, mu: 7.7571, nst0: 6144 
+3074.57 sec, 4001 / 10206 batches, 259 units, nspks: 15110850.0000, mu: 7.7571, nst0: 7087 
+3086.20 sec, 4101 / 10206 batches, 259 units, nspks: 15473047.0000, mu: 7.7571, nst0: 6828 
+3098.16 sec, 4201 / 10206 batches, 259 units, nspks: 15856002.0000, mu: 7.7571, nst0: 7210 
+3109.91 sec, 4301 / 10206 batches, 259 units, nspks: 16222943.0000, mu: 7.7571, nst0: 6427 
+3121.75 sec, 4401 / 10206 batches, 259 units, nspks: 16588007.0000, mu: 7.7571, nst0: 7002 
+3133.34 sec, 4501 / 10206 batches, 259 units, nspks: 16953413.0000, mu: 7.7571, nst0: 6561 
+3145.12 sec, 4601 / 10206 batches, 259 units, nspks: 17325584.0000, mu: 7.7571, nst0: 6657 
+3157.42 sec, 4701 / 10206 batches, 259 units, nspks: 17720883.0000, mu: 7.7571, nst0: 6726 
+3169.92 sec, 4801 / 10206 batches, 259 units, nspks: 18128168.0000, mu: 7.7571, nst0: 7274 
+3182.13 sec, 4901 / 10206 batches, 259 units, nspks: 18520984.0000, mu: 7.7571, nst0: 6724 
+3193.77 sec, 5001 / 10206 batches, 259 units, nspks: 18887960.0000, mu: 7.7571, nst0: 7873 
+3205.03 sec, 5101 / 10206 batches, 259 units, nspks: 19252789.0000, mu: 7.7571, nst0: 7561 
+3216.54 sec, 5201 / 10206 batches, 259 units, nspks: 19628976.0000, mu: 7.7571, nst0: 6394 
+3227.83 sec, 5301 / 10206 batches, 259 units, nspks: 19988174.0000, mu: 7.7571, nst0: 7179 
+3239.16 sec, 5401 / 10206 batches, 259 units, nspks: 20356429.0000, mu: 7.7571, nst0: 6547 
+3250.40 sec, 5501 / 10206 batches, 259 units, nspks: 20712611.0000, mu: 7.7571, nst0: 6652 
+3261.64 sec, 5601 / 10206 batches, 259 units, nspks: 21068201.0000, mu: 7.7571, nst0: 5918 
+3273.14 sec, 5701 / 10206 batches, 259 units, nspks: 21431682.0000, mu: 7.7571, nst0: 6298 
+3297.30 sec, 5801 / 10206 batches, 259 units, nspks: 21812115.0000, mu: 7.7571, nst0: 6424 
+3309.48 sec, 5901 / 10206 batches, 259 units, nspks: 22185021.0000, mu: 7.7571, nst0: 6949 
+3321.12 sec, 6001 / 10206 batches, 259 units, nspks: 22557435.0000, mu: 7.7571, nst0: 7981 
+3332.94 sec, 6101 / 10206 batches, 259 units, nspks: 22935181.0000, mu: 7.7571, nst0: 6176 
+3345.95 sec, 6201 / 10206 batches, 259 units, nspks: 23332947.0000, mu: 7.7571, nst0: 6961 
+3357.97 sec, 6301 / 10206 batches, 259 units, nspks: 23724968.0000, mu: 7.7571, nst0: 8646 
+3369.77 sec, 6401 / 10206 batches, 259 units, nspks: 24105602.0000, mu: 7.7571, nst0: 6496 
+3381.48 sec, 6501 / 10206 batches, 259 units, nspks: 24490079.0000, mu: 7.7571, nst0: 7580 
+3392.99 sec, 6601 / 10206 batches, 259 units, nspks: 24865059.0000, mu: 7.7571, nst0: 6470 
+3404.59 sec, 6701 / 10206 batches, 259 units, nspks: 25246187.0000, mu: 7.7571, nst0: 6566 
+3416.29 sec, 6801 / 10206 batches, 259 units, nspks: 25628508.0000, mu: 7.7571, nst0: 6817 
+3428.54 sec, 6901 / 10206 batches, 259 units, nspks: 26019923.0000, mu: 7.7571, nst0: 6908 
+3440.69 sec, 7001 / 10206 batches, 259 units, nspks: 26410814.0000, mu: 7.7571, nst0: 7008 
+3452.86 sec, 7101 / 10206 batches, 259 units, nspks: 26802870.0000, mu: 7.7571, nst0: 7233 
+3464.56 sec, 7201 / 10206 batches, 259 units, nspks: 27183205.0000, mu: 7.7571, nst0: 6826 
+3476.49 sec, 7301 / 10206 batches, 259 units, nspks: 27576432.0000, mu: 7.7571, nst0: 6797 
+3488.52 sec, 7401 / 10206 batches, 259 units, nspks: 27976605.0000, mu: 7.7571, nst0: 6561 
+3500.51 sec, 7501 / 10206 batches, 259 units, nspks: 28360199.0000, mu: 7.7571, nst0: 7162 
+3512.61 sec, 7601 / 10206 batches, 259 units, nspks: 28752567.0000, mu: 7.7571, nst0: 7220 
+3524.72 sec, 7701 / 10206 batches, 259 units, nspks: 29141338.0000, mu: 7.7571, nst0: 7566 
+3536.85 sec, 7801 / 10206 batches, 259 units, nspks: 29528482.0000, mu: 7.7571, nst0: 7249 
+3548.50 sec, 7901 / 10206 batches, 259 units, nspks: 29902820.0000, mu: 7.7571, nst0: 6774 
+3560.74 sec, 8001 / 10206 batches, 259 units, nspks: 30286335.0000, mu: 7.7571, nst0: 6717 
+3572.50 sec, 8101 / 10206 batches, 259 units, nspks: 30666147.0000, mu: 7.7571, nst0: 7244 
+3584.34 sec, 8201 / 10206 batches, 259 units, nspks: 31044771.0000, mu: 7.7571, nst0: 6596 
+3596.17 sec, 8301 / 10206 batches, 259 units, nspks: 31427571.0000, mu: 7.7571, nst0: 7135 
+3608.01 sec, 8401 / 10206 batches, 259 units, nspks: 31806626.0000, mu: 7.7571, nst0: 6815 
+3619.96 sec, 8501 / 10206 batches, 259 units, nspks: 32189307.0000, mu: 7.7571, nst0: 6449 
+3631.97 sec, 8601 / 10206 batches, 259 units, nspks: 32572764.0000, mu: 7.7571, nst0: 6884 
+3643.96 sec, 8701 / 10206 batches, 259 units, nspks: 32958705.0000, mu: 7.7571, nst0: 7423 
+3655.85 sec, 8801 / 10206 batches, 259 units, nspks: 33341039.0000, mu: 7.7571, nst0: 6768 
+3667.95 sec, 8901 / 10206 batches, 259 units, nspks: 33737792.0000, mu: 7.7571, nst0: 7021 
+3680.26 sec, 9001 / 10206 batches, 259 units, nspks: 34144698.0000, mu: 7.7571, nst0: 7152 
+3692.49 sec, 9101 / 10206 batches, 259 units, nspks: 34541419.0000, mu: 7.7571, nst0: 6927 
+3704.88 sec, 9201 / 10206 batches, 259 units, nspks: 34942479.0000, mu: 7.7571, nst0: 7620 
+3717.12 sec, 9301 / 10206 batches, 259 units, nspks: 35337129.0000, mu: 7.7571, nst0: 7381 
+3729.32 sec, 9401 / 10206 batches, 259 units, nspks: 35735163.0000, mu: 7.7571, nst0: 6793 
+3741.54 sec, 9501 / 10206 batches, 259 units, nspks: 36136666.0000, mu: 7.7571, nst0: 6721 
+3757.09 sec, 9601 / 10206 batches, 259 units, nspks: 36552001.0000, mu: 7.7571, nst0: 7010 
+3773.31 sec, 9701 / 10206 batches, 259 units, nspks: 36928997.0000, mu: 7.7571, nst0: 6185 
+3788.96 sec, 9801 / 10206 batches, 259 units, nspks: 37300831.0000, mu: 7.7571, nst0: 7814 
+3805.52 sec, 9901 / 10206 batches, 259 units, nspks: 37686567.0000, mu: 7.7571, nst0: 6959 
+3821.37 sec, 10001 / 10206 batches, 259 units, nspks: 38052195.0000, mu: 7.7571, nst0: 6178 
+3837.30 sec, 10101 / 10206 batches, 259 units, nspks: 38420475.0000, mu: 7.7571, nst0: 7669 
+3853.53 sec, 10201 / 10206 batches, 259 units, nspks: 38800286.0000, mu: 7.7571, nst0: 6466 
+Elapsed time is 3854.145957 seconds.
+Number of spikes before applying cutoff: 71775609
+initialized spike counts
+merged 163 into 160 
+merged 165 into 162 
+Found 0 splits, checked 1/259 clusters, nccg 1 
+Found 8 splits, checked 101/267 clusters, nccg 48 
+Found 13 splits, checked 201/272 clusters, nccg 100 
+Finished splitting. Found 15 splits, checked 274/274 clusters, nccg 140 

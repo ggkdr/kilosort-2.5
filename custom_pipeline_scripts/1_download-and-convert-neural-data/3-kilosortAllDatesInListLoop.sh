@@ -35,7 +35,12 @@ a="Pancho"
 # date_list=(230108 230109) # LT, 
 # date_list=(230608 230615) # LT, 
 # date_list=(230122) # LT, 
-date_list=(230120 220909) # LT, 
+# date_list=(230120 220909) # LT, 
+# date_list=(220929 220908) # LT, 
+# date_list=( 221001 ) # LT, 
+# date_list=(220906 221121 220925) # LT, 
+date_list=(230125 230126 230127) # KGG
+
 
 # # LOGGING DATES TO DO (8/21/23)
 # # singleprims
@@ -54,19 +59,12 @@ date_list=(230120 220909) # LT,
 
 # 230811 - SKIP, too large for GPU for now...
 
-# # chars
-# 
-# 
-# 230125
-# 230126
-# 230127
-
 # # AnBm
 # 220831
 # 220901
 # 220902
-# 220906
-# 220908
+# 
+# 
 # 
 
 # #AnBmCk
@@ -77,16 +75,16 @@ date_list=(230120 220909) # LT,
 # # dir vs. dir
 # 221117
 # 221119
-# 221121
+# 
 
 # # AnBm vs. sup
 # 220915
 # 220916
-# 220925
-# 220929
+# 
+# 
 
 # # AnBm vs. dir vs. sup
-# 221001
+# 
 
 # # dir vs. dir vs. shape
 # 221023
