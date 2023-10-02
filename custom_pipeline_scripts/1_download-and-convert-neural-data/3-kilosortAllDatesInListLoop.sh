@@ -39,7 +39,11 @@ a="Pancho"
 # date_list=(220929 220908) # LT, 
 # date_list=( 221001 ) # LT, 
 # date_list=(220906 221121 220925) # LT, 
-date_list=(230125 230126 230127) # KGG
+# date_list=(230126 230127) # KGG
+# date_list=(230125 220915) # KGG
+# date_list=(230811) # KGG
+# date_list=(220831 220916) # KGG
+date_list=(221117 221017 221023) # KGG
 
 
 # # LOGGING DATES TO DO (8/21/23)
@@ -57,10 +61,10 @@ date_list=(230125 230126 230127) # KGG
 # 
 # 
 
-# 230811 - SKIP, too large for GPU for now...
+#  - SKIP, too large for GPU for now...
 
 # # AnBm
-# 220831
+# 
 # 220901
 # 220902
 # 
@@ -70,16 +74,16 @@ date_list=(230125 230126 230127) # KGG
 # #AnBmCk
 
 # # dir vs dir vs superv
-# 221017
+# 
 
 # # dir vs. dir
-# 221117
+# 
 # 221119
 # 
 
 # # AnBm vs. sup
-# 220915
-# 220916
+# 
+# 
 # 
 # 
 
@@ -87,7 +91,7 @@ date_list=(230125 230126 230127) # KGG
 # 
 
 # # dir vs. dir vs. shape
-# 221023
+# 
 # 221021
 
 # # rowcol
@@ -95,6 +99,9 @@ date_list=(230125 230126 230127) # KGG
 # 230306
 # 230320
 # 230310
+
+# Command to track gpu usage.
+# touch gpu_log.txt && nvidia-smi dmon -s mu -d 5 -o TD >> gpu_log.txt 
 
 # main
 for d in ${date_list[@]}; do

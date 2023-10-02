@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# load necessary variables/paths
+source /home/kgg/Desktop/kilosort-2.5/custom_pipeline_scripts/globals.sh
+
 a=$1
 d=$2
 
