@@ -16,13 +16,14 @@ source /home/kgg/Desktop/kilosort-2.5/custom_pipeline_scripts/globals.sh
 #stores=("RSn2" "RSn3")
 
 # make local directories for storing .bin files
-SERVER_SESSION_PATH="$SERVER_DATA_PATH/$a/$date/$session_name"
+SERVER_SESSION_PATH="$SERVER_RAW_DATA_PATH/$a/$date/$session_name"
 #KS_PATH="/data5/Kedar/neural_spike_sorting/kilosort_data"
 LOCAL_SESSION_PATH="$LOCAL_DATA_PATH/$a/$date/$session_name"
 mkdir -p $LOCAL_SESSION_PATH
 
 # for each .sev file in $SERVER_SESSION_PATH, create a symlink in $LOCAL_SESSION_PATH
 cd $SERVER_SESSION_PATH
+echo $SERVER_SESSION_PATH
 for f in *.sev; do
   ln -s $SERVER_SESSION_PATH/$f $LOCAL_SESSION_PATH/$f
 done

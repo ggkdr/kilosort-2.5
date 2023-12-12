@@ -3,6 +3,10 @@
 % NOTE: made this a function so it's easier to run from CLI
 %
 function exitcode = runKilosortMain(animal, ddate, batchesPerStore, channelsPerBatch)
+
+    % Turn off figure visibility
+    set(0,'DefaultFigureVisible','off')
+    
     %% add paths for Kilosort, other packages
     KS_install_path = '/home/kgg/Desktop/kilosort-2.5/';
     NPYM_install_path = '/home/kgg/Desktop/npy-matlab/';
@@ -177,6 +181,7 @@ function exitcode = runKilosortMain(animal, ddate, batchesPerStore, channelsPerB
         
         if true
             delete([batch_data_path '/' batchHeader '.bin'])
+            delete([batch_data_path '/temp_wh.dat'])
             %movefile([batch_data_path '/temp_wh.dat'], data5_backup_path)
         else
             % LT 5/29/23, just in case need to rerun.

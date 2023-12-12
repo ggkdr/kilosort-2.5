@@ -43,9 +43,16 @@ a="Pancho"
 # date_list=(230125 220915) # KGG
 # date_list=(230811) # KGG
 # date_list=(220831 220916) # KGG
-date_list=(221117) # KGG
+#date_list=(221117) # KGG
+# date_list=(221023 220715 220606 220608 220609 220610 220718 230117 230118 230119 230124 230905 230910 230911 230918 230914 230919 230912 230920)
 
+# date_list=(230124 230905 230910) # LT 10/14/23
+#date_list=(230117 230919 230920 230921 230810 230928 230929 220829 221021) # KG 10/18/23
 
+#date_list=(230919 230920 230921 230929 221119 231113 231114 230111 230105 230106 230108 230109 230608 230112 220812 220814 220816 220823 220824 20827 221118 230309 230308 221105)
+#date_list=(230920 230921 231113 231114 230105 230106 230109 230608 230112 220812 220814 220816 220823 220824 220827 221118 230309 230308 221105)
+#date_list=(221113 221114)
+date_list=(231114 230928 230929)
 # # LOGGING DATES TO DO (8/21/23)
 # # singleprims
 # 
@@ -105,6 +112,11 @@ date_list=(221117) # KGG
 
 # main
 for d in ${date_list[@]}; do
+  # echo "${SERVER_KILOSORT_DATA_PATH}/${a}/${d}/KS_done.txt"
+  if [ -f "${SERVER_KILOSORT_DATA_PATH}/${a}/${d}/KS_done.txt" ]; then
+    echo "${d} kilosort full run is found on server... SKIPPING"
+    continue
+  fi
   logfile="log_kilosortOneDate_${d}.txt"
   touch ${logfile}	
   # bash ./3-kilosortOneDate.sh $a $d 2>&1 | tee ${logfile} &
@@ -112,8 +124,7 @@ for d in ${date_list[@]}; do
   # NOTE: this runs in parallel, but we are instead running in serial and then running 3 of these scripts in parallel.
   #/usr/bin/time -v ./3-kilosortOneDate.sh $a $d 2>&1 | tee ${logfile} &
   /usr/bin/time -v ./3-kilosortOneDate.sh $a $d 2>&1 | tee ${logfile}
-  ./7-uploadDayFromLemur2ToServer.sh $a $d &
-
+  ./7-uploadKilosortedDayFromLocalToServer.sh $a $d &
 done
 
 

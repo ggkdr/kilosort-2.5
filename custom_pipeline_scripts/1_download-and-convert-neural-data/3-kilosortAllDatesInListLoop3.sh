@@ -10,7 +10,9 @@ source /home/kgg/Desktop/kilosort-2.5/custom_pipeline_scripts/globals.sh
 #   hopfield_mount
 # fi
 
-a="Pancho"
+#a="Pancho"
+a="Diego" # KG 10/18/23
+
 # date_list=(220930 221014 221020 221031 221102 221107 221114 221121 221125)
 # date_list=(221020 220930 221014 221031 221102 221107 221114 221121 221125)
 # date_list=(220715 220709 220714 230105)
@@ -43,9 +45,14 @@ a="Pancho"
 # date_list=(230125 220915) # KGG
 # date_list=(230811) # KGG
 # date_list=(220831 220916) # KGG
-date_list=(221023) # KGG
+#date_list=(221023) # KGG
+# date_list=(221120 230307 230306 230320 230310 220831 220901 220902 220907 221107 221106 231113 231114 220913 220916 220921 220920 220928 220926)
 
-
+#date_list=(230919 230912) # LT 10/14/23
+#date_list=(230618 230619 230616 230625 230627 230628 230629 230624 230630) # KG 10/18/23
+#date_list=(230704 230707 230711 230713 230717 230831 230617 230614 230615 230622 230623)
+#date_list=(231116 231118 231019 231020 231023 231024)
+date_list=(231023 231020)
 # # LOGGING DATES TO DO (8/21/23)
 # # singleprims
 # 
@@ -105,15 +112,22 @@ date_list=(221023) # KGG
 
 # main
 for d in ${date_list[@]}; do
+  if [ -f "${SERVER_KILOSORT_DATA_PATH}/${a}/${d}/KS_done.txt" ]; then
+    echo "${d} kilosort full run is found on server... SKIPPING"
+    continue
+  fi
+
+  #if [ -f "${SERVER_DATA_PATH}/${a}/${d}/KS_done.txt" ]; then
+  #  echo "${d} is kilosorted on server"
+  #fi
   logfile="log_kilosortOneDate_${d}.txt"
-  touch ${logfile}	
+  touch ${logfile}  
   # bash ./3-kilosortOneDate.sh $a $d 2>&1 | tee ${logfile} &
 
   # NOTE: this runs in parallel, but we are instead running in serial and then running 3 of these scripts in parallel.
   #/usr/bin/time -v ./3-kilosortOneDate.sh $a $d 2>&1 | tee ${logfile} &
   /usr/bin/time -v ./3-kilosortOneDate.sh $a $d 2>&1 | tee ${logfile}
-  ./7-uploadDayFromLemur2ToServer.sh $a $d &
-
+  ./7-uploadKilosortedDayFromLocalToServer.sh $a $d &
 done
 
 

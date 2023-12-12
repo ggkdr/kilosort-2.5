@@ -8,13 +8,13 @@ d=$2
 kilosort_only=$3 # 1 to do only kilosort.
 
 # make sure this date has recordings
-DATE_FOLDER_SERVER=$SERVER_DATA_PATH/$a/$d
+DATE_FOLDER_SERVER=$SERVER_RAW_DATA_PATH/$a/$d
 DATE_FOLDER_LOCAL=$LOCAL_DATA_PATH/$a/$d
 
 echo "$DATE_FOLDER_SERVER"
 echo "$DATE_FOLDER_LOCAL"
 
-if [ -d "$DATE_FOLDER_SERVER" ]; then
+if [ -d "$DATE_FOLDER_SERVER" ] && [ -n "$(ls -A $DATE_FOLDER_SERVER)" ]; then
   cd $DATE_FOLDER_SERVER
 
 	if [[ $kilosort_only -ne 1 ]]; then
@@ -25,6 +25,7 @@ if [ -d "$DATE_FOLDER_SERVER" ]; then
 		  echo "--PROCESSING: ${session_name}"
 
 	    # create bin files (note: if createLocalBinsFSSF fails, this script terminates because of -e in 1st line)
+	    echo $PIPELINE_SCRIPTS_PATH1
 			bash $PIPELINE_SCRIPTS_PATH1/2-createLocalBinsFromServerSessionFolder.sh $a $d $session_name
 		done
 	else

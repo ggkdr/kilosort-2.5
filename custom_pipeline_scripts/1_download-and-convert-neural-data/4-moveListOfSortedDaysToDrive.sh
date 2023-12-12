@@ -7,7 +7,7 @@ a=$1
 cd $LOCAL_DATA_PATH/$a
 echo "$LOCAL_DATA_PATH/$a"
 
-date_list=(220906 221121 220925)
+date_list=(230915)
 for d in ${date_list[@]}; do
   dat=$(basename $d)
   echo $dat
