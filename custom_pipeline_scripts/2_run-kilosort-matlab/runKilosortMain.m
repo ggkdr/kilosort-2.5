@@ -181,7 +181,6 @@ function exitcode = runKilosortMain(animal, ddate, batchesPerStore, channelsPerB
         
         if true
             delete([batch_data_path '/' batchHeader '.bin'])
-            delete([batch_data_path '/temp_wh.dat'])
             %movefile([batch_data_path '/temp_wh.dat'], data5_backup_path)
         else
             % LT 5/29/23, just in case need to rerun.
