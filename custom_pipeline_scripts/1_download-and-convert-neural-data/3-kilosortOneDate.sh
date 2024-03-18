@@ -72,6 +72,7 @@ if [ -d "$DATE_FOLDER_SERVER" ] && [ -n "$(ls -A $DATE_FOLDER_SERVER)" ]; then
 	  # now run kilosort on the .bin files
 	  # bash /data1/programs/MATLAB/R2021a/bin/matlab -batch "runKilosortMain('$a', '$d', '$batchesPerStore', '$channelsPerBatch')"
 	  echo "** Running kilosort..."
+	  #bash /usr/local/MATLAB/R2021a/bin/matlab -batch "runKilosortMain('$a', '$d', ${batchesPerStore}, ${channelsPerBatch})"
 	  bash /usr/local/MATLAB/R2021a/bin/matlab -batch "runKilosortMain('$a', '$d', ${batchesPerStore}, ${channelsPerBatch})"
   fi
 fi
