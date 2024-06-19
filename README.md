@@ -34,5 +34,5 @@ To run:
  
 After a day has been completely run, final step is manual curation of units:
 1. Open MATLAB
-2. Open kspostprocess_CURATE.m and edit dates
+2. Open kspostprocess_CURATE.m and edit dates (this file is in neuralmonkey/neuralmonkey/kilosort)
 3. Run kspostprocess_CURATE
