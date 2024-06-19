@@ -22,3 +22,17 @@ https://www.tdt.com/docs/sdk/offline-data-analysis/offline-data-python/getting-s
 4. Add all folders to MATLAB path
 5. In MATLAB, run this command: mexGPUall
 6. If necessary, set up swap memory on machine (certain steps in Kilosort briefly use large amounts of RAM)
+
+To run:
+1. Single date: custom_pipeline_scripts/1_download-and-convert-neural-data/3-kilosortOneDate.sh
+2. Multiple dates in loop: custom_pipeline_scripts/1_download-and-convert-neural-data/3-kilosortAllDatesInListLoop.sh
+* Often, will want to run 2-3 loops concurrently; there are copies of 3-kilosortAllDatesInLoop.sh to use for this
+* This will take care of everything end-to-end:
+  * Making aliases to .sev files on server, and converting them to .bin files
+  * Passing the .bin files into Kilosort to extract units
+  * Scoring extracted units by SNR, allowing for a final manual pass
+ 
+After a day has been completely run, final step is manual curation of units:
+1. Open MATLAB
+2. Open kspostprocess_CURATE.m and edit dates
+3. Run kspostprocess_CURATE
