@@ -1,8 +1,8 @@
 #!/bin/bash -e
 
 # load necessary variables and paths
-source /home/kgg/Desktop/kilosort-2.5/custom_pipeline_scripts/globals.sh
-
+#source /home/kgg/Desktop/kilosort-2.5/custom_pipeline_scripts/globals.sh
+source /gorilla4/kilosort-2024/kilosort-2.5/custom_pipeline_scripts/globals.sh
 a=$1  
 d=$2
 kilosort_only=$3 # 1 to do only kilosort.
@@ -73,6 +73,6 @@ if [ -d "$DATE_FOLDER_SERVER" ] && [ -n "$(ls -A $DATE_FOLDER_SERVER)" ]; then
 	  # bash /data1/programs/MATLAB/R2021a/bin/matlab -batch "runKilosortMain('$a', '$d', '$batchesPerStore', '$channelsPerBatch')"
 	  echo "** Running kilosort..."
 	  #bash /usr/local/MATLAB/R2021a/bin/matlab -batch "runKilosortMain('$a', '$d', ${batchesPerStore}, ${channelsPerBatch})"
-	  bash /usr/local/MATLAB/R2021a/bin/matlab -batch "runKilosortMain('$a', '$d', ${batchesPerStore}, ${channelsPerBatch})"
+	  bash ${MATLAB_PATH} -batch "runKilosortMain('$a', '$d', ${batchesPerStore}, ${channelsPerBatch})"
   fi
 fi

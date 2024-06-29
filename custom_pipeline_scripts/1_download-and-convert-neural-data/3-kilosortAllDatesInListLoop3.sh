@@ -2,8 +2,8 @@
 # takes list of dates, creates .bin files in N batches (default N=8), and runs kilosort on all of them
 
 # load necessary variables and paths
-source /home/kgg/Desktop/kilosort-2.5/custom_pipeline_scripts/globals.sh
-
+#source /home/kgg/Desktop/kilosort-2.5/custom_pipeline_scripts/globals.sh
+source /gorilla4/kilosort-2024/kilosort-2.5/custom_pipeline_scripts/globals.sh
 # #  mount hopfield using kgupta ssh key (-wx access)
 # if [ ! -d /mnt/hopfield_data01 ]; then
 #   #bash /mnt/mount_hopfield_kgupta.sh

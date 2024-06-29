@@ -7,7 +7,8 @@ date=$2
 session_name=$3
 
 # load necessary variables and paths
-source /home/kgg/Desktop/kilosort-2.5/custom_pipeline_scripts/globals.sh
+#source /home/kgg/Desktop/kilosort-2.5/custom_pipeline_scripts/globals.sh
+source /gorilla4/kilosort-2024/kilosort-2.5/custom_pipeline_scripts/globals.sh
 #batchesPerStore=$4
 #channelsPerStore=$5
 

@@ -2,8 +2,8 @@
 # takes list of dates, creates .bin files in N batches (default N=8), and runs kilosort on all of them
 
 # load necessary variables and paths
-source /home/kgg/Desktop/kilosort-2.5/custom_pipeline_scripts/globals.sh
-
+#source /home/kgg/Desktop/kilosort-2.5/custom_pipeline_scripts/globals.sh
+source /gorilla4/kilosort-2024/kilosort-2.5/custom_pipeline_scripts/globals.sh
 # #  mount hopfield using kgupta ssh key (-wx access)
 # if [ ! -d /mnt/hopfield_data01 ]; then
 #   #bash /mnt/mount_hopfield_kgupta.sh
@@ -61,7 +61,10 @@ a="Pancho"
 #date_list=(220531 220602 220603 220614 220616 220618 220622 220626 220627 220628 220630 220702 220704 220707 220709 220711 220725 220728 220730 220802 220803 220817 220818 220819 220822)
 #date_list=(231005 220818 220819 220822 221112 230329 221002 221014 231101 231102 231103 231106 230831 230904 231024 231026 220728)
 # date_list=(231005 230329 231101 231102 231103 231110 230831 230904)
-date_list=(231005 231101 231102 231103) # LT, pruned on 3/13/24, those I think already done.
+# date_list=(240508 240509 240510 240515) # LT, pruned on 3/13/24, those I think already done.
+
+date_list=(240524 240523 240516 240521 240530 240604 240605 240606 240607 240612 240618 240619) # LT, pruned on 3/13/24, those I think already done.
+
 # # LOGGING DATES TO DO (8/21/23)
 # # singleprims
 # 

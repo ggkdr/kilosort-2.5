@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # load necessary variables and paths
-source /home/kgg/Desktop/kilosort-2.5/custom_pipeline_scripts/globals.sh
+#source /home/kgg/Desktop/kilosort-2.5/custom_pipeline_scripts/globals.sh
+source /gorilla4/kilosort-2024/kilosort-2.5/custom_pipeline_scripts/globals.sh
 
 a=$1
 d=$2
@@ -14,7 +15,7 @@ if [ -e $LOCAL_DATA_PATH/$a/$d/KS_done.txt ]; then
 	echo "uploading ${a}-${d} from ${LOCAL_DATA_PATH} to server.."
 
 	# move entire date folder to server using rsync
-	rsync -av --remove-source-files $LOCAL_DATA_PATH/$a/$d kgupta@turing.rockefeller.edu:/Freiwald/kgupta/neural_data/$a
+	rsync -av --remove-source-files $LOCAL_DATA_PATH/$a/$d kgupta@${SERVER_URL}:/Freiwald/kgupta/neural_data/$a
 	
 	# move empty directories after rsync completes, to a folder that can be checked and deleted
 	mkdir -p $LOCAL_DATA_PATH/$a/dates_transferred_to_server/$d
@@ -28,11 +29,11 @@ else
 	# Probably had bug or ran out of disk space.
 
 	# rsync transfer from local to server
-	echo "uploading ${a}-${d} from ${LOCAL_DATA_PATH} to lemur2.."
+	echo "uploading ${a}-${d} from ${LOCAL_DATA_PATH} to backup drive: ${LOCAL_DATA_BACKUP_PATH}.."
 
 	# move entire date folder to server using rsync
-	# rsync -av --remove-source-files $LOCAL_DATA_PATH/$a/$d kgupta@turing.rockefeller.edu:/Freiwald/kgupta/neural_data/$a
-	rsync -av --remove-source-files $LOCAL_DATA_PATH/$a/$d /lemur2/kilosort_data/$a/
+	# rsync -av --remove-source-files $LOCAL_DATA_PATH/$a/$d kgupta@${SERVER_URL}:/Freiwald/kgupta/neural_data/$a
+	rsync -av --remove-source-files $LOCAL_DATA_PATH/$a/$d ${LOCAL_DATA_BACKUP_PATH}/$a/
 	
 	# move empty directories after rsync completes, to a folder that can be checked and deleted
 	mkdir -p $LOCAL_DATA_PATH/$a/dates_transferred_to_lemur2/$d
