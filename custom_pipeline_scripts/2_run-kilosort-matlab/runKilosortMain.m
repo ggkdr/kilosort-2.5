@@ -1,16 +1,17 @@
 %% adapted from /Kilosort-2.5/main_kilosort.m
 % runs Kilosort algorithm for one entire day %
 % NOTE: made this a function so it's easier to run from CLI
-%
+
+
 function exitcode = runKilosortMain(animal, ddate, batchesPerStore, channelsPerBatch)
 
     % Turn off figure visibility
     set(0,'DefaultFigureVisible','off')
     
     %% add paths for Kilosort, other packages
-    KS_install_path = '/home/kgg/Desktop/kilosort-2.5/';
-    NPYM_install_path = '/home/kgg/Desktop/npy-matlab/';
-    KS_data_path = '/home/kgg/Desktop/kilosort_data/';
+    KS_install_path = '/gorilla4/kilosort-2024/kilosort-2.5/';
+    NPYM_install_path = '/gorilla4/kilosort-2024/npy-matlab/';
+    KS_data_path = '/gorilla4/kilosort-2024/kilosort_data/';
     
     addpath(genpath([KS_install_path])) % path to kilosort folder
     addpath(genpath([NPYM_install_path])) % for converting to Phy
