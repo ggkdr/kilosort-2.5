@@ -3,7 +3,7 @@
 % information)
 
     enableStableMode = true;
-    cd ('/home/kgg/Desktop/kilosort-2.5/CUDA');
+    cd ('/gorilla4/kilosort-2024/kilosort-2.5/CUDA');
     mexcuda -largeArrayDims spikedetector3.cu
     mexcuda -largeArrayDims mexThSpkPC.cu
     mexcuda -largeArrayDims mexGetSpikes2.cu
