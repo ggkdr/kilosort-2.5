@@ -19,6 +19,8 @@ https://www.tdt.com/docs/sdk/offline-data-analysis/offline-data-python/getting-s
       - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-9 60 --slave /usr/bin/g++ g++ /usr/bin/g++-9
 * NOTE: when installing CUDA, make sure to use DEB, not RUNFILE, because runfile does not update package management and will mess up [https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=22.04](https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=22.04&target_type=deb_local)https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=22.04&target_type=deb_local
 
+* if getting errors with NVIDIA drivers: https://linuxconfig.org/how-to-install-the-nvidia-drivers-on-ubuntu-22-04 (run this command: ubuntu-drivers devices; sudo ubuntu-drivers autoinstall)
+
 4. Add all folders to MATLAB path
 5. In MATLAB, run this command: mexGPUall
 6. If necessary, set up swap memory on machine (certain steps in Kilosort briefly use large amounts of RAM)
@@ -27,10 +29,6 @@ https://www.tdt.com/docs/sdk/offline-data-analysis/offline-data-python/getting-s
 * Update globals.sh
 * Update paths in runKilosortMain.m at top.
 * Fix paths in neuralmonkey/ks_postprocess... (in at least 2 scripts)
-
-* NOTE: make sure to use DEB, not RUNFILE, because runfile does not update package management and will mess up [https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=22.04](https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=22.04&target_type=deb_local)https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=22.04&target_type=deb_local
-
-* if getting errors with NVIDIA drivers: https://linuxconfig.org/how-to-install-the-nvidia-drivers-on-ubuntu-22-04 (run this command: ubuntu-drivers devices; sudo ubuntu-drivers autoinstall)
 
 To run:
 1. Single date: custom_pipeline_scripts/1_download-and-convert-neural-data/3-kilosortOneDate.sh

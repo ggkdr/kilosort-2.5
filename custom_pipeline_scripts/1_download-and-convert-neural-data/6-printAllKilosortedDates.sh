@@ -23,6 +23,13 @@ for DIR in ${LIST_DIR[@]}; do
 			echo "$f -- Partial (no KS_done.txt)"
 			PARTIAL_DATES+=($f)
 		fi
+		
+		if [ -f "RSn2_batch1/temp_wh.dat" ]; then
+			echo "$f -- temp_wh EXISTS!"
+		else
+			echo "$f -- temp_wh doesnt exist"
+		fi
+
 		cd ..
 	done
 done

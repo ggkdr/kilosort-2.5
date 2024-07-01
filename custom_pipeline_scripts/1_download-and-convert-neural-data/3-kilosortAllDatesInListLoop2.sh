@@ -61,7 +61,7 @@ a="Diego"
 # date_list=(231214 231215 231103 231110 231114 231115 231026 231027 231029) # LT, pruned on 3/13/24, those I think already done.
 # date_list=(240508 240509 240510 240513 240515 240516) # LT, pruned on 3/13/24, those I think already done.
 
-date_list=(240517 240521 240522 240523 240530 240603 240604 240605 240606 240612 240614 240618 240619 240620) # LT, pruned on 3/13/24, those I think already done.
+date_list=(240530 240603 240604 240605 240606 240612 240614 240618 240619 240620) # LT, pruned on 3/13/24, those I think already done.
 
 # # LOGGING DATES TO DO (8/21/23)
 # # singleprims

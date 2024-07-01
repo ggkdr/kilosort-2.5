@@ -59,6 +59,8 @@ for date in ${DONE_DATES[@]}; do
 	# DIR=/lemur2/kilosort_data/Pancho
 	echo "-- $date"
 done
+echo "... as a list you can copy:"
+echo "${DONE_DATES[*]}"
 
 echo "(2) Dates that have been curated, but NOT finalized:"
 for date in ${PARTIAL_DATES[@]}; do
