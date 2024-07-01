@@ -62,20 +62,26 @@ done
 echo "... as a list you can copy:"
 echo "${DONE_DATES[*]}"
 
-echo "(2) Dates that have been curated, but NOT finalized:"
+echo "(2) Dates that have been curated (by hand), but NOT finalized (did not run the final script):"
 for date in ${PARTIAL_DATES[@]}; do
 	# DIR=/lemur2/kilosort_data/Pancho
 	echo "-- $date"
 done
+echo "... as a list you can copy:"
+echo "${PARTIAL_DATES[*]}"
 
 echo "(3) Dates that have not been curated, but postprocessing has been run:"
 for date in ${NONE_DATES[@]}; do
 	# DIR=/lemur2/kilosort_data/Pancho
 	echo "-- $date"
 done
+echo "... as a list you can copy:"
+echo "${NONE_DATES[*]}"
 
 echo "(4) Dates that need to have postprocessing run:"
 for date in ${NO_POSTPROCESS_DATES[@]}; do
 	# DIR=/lemur2/kilosort_data/Pancho
 	echo "-- $date"
 done
+echo "... as a list you can copy:"
+echo "${NO_POSTPROCESS_DATES[*]}"

@@ -197,20 +197,26 @@ function exitcode = runKilosortMain(animal, ddate, batchesPerStore, channelsPerB
     fid = fopen(fullfile(day_folder_path, 'KS_done.txt'), 'w');
     fclose(fid);
 
-    dateNum = str2num(ddate)
+    dateNum = str2num(ddate);
     kspostprocess_extract(animal, dateNum)
     kspostprocess_metrics_and_label(animal, dateNum)
     
     % finally, delete temp_wh.dat if successfully extracted
     SAVEDIR_FINAL_SERVER = ['/mnt/Freiwald/kgupta/neural_data/postprocess/final_clusters/' animal '/' dateNum];
     if isfile([SAVEDIR_FINAL_SERVER '/DONE_kspostprocess_metrics_and_label.mat'])
-    for i=1:length(store_batches)
-        store = store_batches{i}{1};
-        batch = store_batches{i}{2};
-        batchHeader = [store '_batch' batch]; % file header of each batch's folder/.bin
-        batch_data_path = [day_folder_path batchHeader];
-        delete([batch_data_path '/temp_wh.dat'])
+        disp('!! Deleting temp_wh.dat files! ...');
+        for i=1:length(store_batches)
+            store = store_batches{i}{1};
+            batch = store_batches{i}{2};
+            batchHeader = [store '_batch' batch]; % file header of each batch's folder/.bin
+            batch_data_path = [day_folder_path batchHeader];
+            disp(['... deleting ', batch_data_path '/temp_wh.dat']);
+            delete([batch_data_path '/temp_wh.dat'])
+        end
+    else
+        disp('!! SKIPPING Deleting temp_wh.dat files! (becuase did not find this file...]');
+        disp([SAVEDIR_FINAL_SERVER '/DONE_kspostprocess_metrics_and_label.mat']);
     end
-
+    
     % after this, run manually: kspostprocess_CURATE (makes guis with kspp_manual_curate_merge, and then updates dataset with kspp_finalize_after_manual)
 end

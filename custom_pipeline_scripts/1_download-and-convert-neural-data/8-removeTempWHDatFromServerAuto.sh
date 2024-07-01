@@ -5,10 +5,10 @@
 # 1. Get list of dates by running ./6-printAllDatesPOst...
 # 2. Copy here, and run.
 
-animal="Diego"
+animal="Pancho"
 BASE_DIR_SERVER="/mnt/Freiwald/kgupta/neural_data/${animal}"
-date_list=(230614 230615 230616 230617 230618 230619 230621 230622 230623 230624 230625 230627 230628 230629 230630 230703 230704 230705 230707 230711 230713 230717 230719 230723 230724 230726 230727 230915 230924 231120 231121 231122 231128 231130 231201 231204 231205 231206 231207 231211 231213 231218 231219)
-
+date_list=(220830 220531 220602 220603 220614 220616 220618 220621 220622 220624 220626 220627 220628 220630 220702 220703 220704 220706 220707 220709 220711 220714 220725 220727 220728 220730 220731)
+safe_mode=false
 # within each date: have to go through folders with name *batch* and delete temp_wh.dat
 for d in ${date_list[@]}; do
 # for d in $BASE_DIR_SERVER/*/; do
@@ -21,11 +21,17 @@ for d in ${date_list[@]}; do
 		if [ -f "${bdir}/temp_wh.dat" ]; then
 			file_to_remove="${bdir}/temp_wh.dat"
 
-			read -r -p "Delete ${d}/${file_to_remove}? [y/N]: " response
-			case "$response" in
-				[yY][eE][sS]|[yY]) echo -e "--Deleting ${file_to_remove}\n"; rm $file_to_remove ;;
-				*) echo -e "--SKIPPING ${file_to_remove}\n"
-			esac
+			if ${safe_mode}; then
+				read -r -p "Delete ${d}/${file_to_remove}? [y/N]: " response
+				case "$response" in [yY][eE][sS]|[yY]) 
+					echo -e "--Deleting ${file_to_remove}\n"; 
+					rm $file_to_remove ;;
+					*) echo -e "--SKIPPING ${file_to_remove}\n"
+				esac
+			else
+				echo -e "--Deleting ${file_to_remove}\n"; 
+				rm $file_to_remove;
+			fi
 		fi
 	done
 done
