@@ -5,9 +5,9 @@
 # 1. Get list of dates by running ./6-printAllDatesPOst...
 # 2. Copy here, and run.
 
-animal="Pancho"
+animal="Diego"
 BASE_DIR_SERVER="/mnt/Freiwald/kgupta/neural_data/${animal}"
-date_list=(220830 220531 220602 220603 220614 220616 220618 220621 220622 220624 220626 220627 220628 220630 220702 220703 220704 220706 220707 220709 220711 220714 220725 220727 220728 220730 220731)
+date_list=(230525 230527 230601 230605 230606 230607 230608 230609 230610 230612 230613 230626 230728 230730 230802 230804 230808 230809 230810 230811)
 safe_mode=false
 # within each date: have to go through folders with name *batch* and delete temp_wh.dat
 for d in ${date_list[@]}; do
